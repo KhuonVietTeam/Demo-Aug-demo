@@ -105,7 +105,7 @@ public class Player
     {
         _name = name;
         _wallet = new Wallet(wallet);
-        _bullet = new Bullet(wallet);
+        _bullet = new Bullet(bullet);
     }
 
     public string _name { get; private set; }

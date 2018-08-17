@@ -31,14 +31,14 @@ public class rotacanon : MonoBehaviour
         // su kien xoay trai vaf xoay phai
         if (Input.GetKey(KeyCode.A))
         {
-            rotation += 1;
-            transform.localRotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, Mathf.Clamp(rotation, 10, 180));
+            //rotation += 1;
+            transform.localRotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, Mathf.Clamp(rotation+1, 10, 180));
 
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            rotation -= 1;
-            transform.localRotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, Mathf.Clamp(rotation, 10, 180));
+            //rotation -= 1;
+            transform.localRotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, Mathf.Clamp(rotation+1, 10, 180));
         }
         // su kien ban
         if (Input.GetKeyDown(KeyCode.Space))

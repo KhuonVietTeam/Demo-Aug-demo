@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KeyboardManager : MonoBehaviour {
-    
+public class KeyboardManager : MonoBehaviour
+{
+
     public GameObject[] srcBullets, srcCannons, srcWebs;
     private GameObject bullet, cannon1, cannon2, cannon3, cannon4;
     private Transform bulletZone;
 
     // Use this for initialization
-    void Awake () {
+    void Awake()
+    {
         srcBullets = Resources.LoadAll<GameObject>("Bullets");
         srcCannons = Resources.LoadAll<GameObject>("Cannons");
         srcWebs = Resources.LoadAll<GameObject>("Webs");
@@ -25,7 +27,32 @@ public class KeyboardManager : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update () {
+    void Update()
+    {
+
+        GetKeyToShoot();
+        //GetKeyToRotate();
+
+
+    }
+    void GetKeyToRotate()
+    {
+        //if (Input.GetKey(KeyCode.A))
+        //{
+        //    rotation += 1;
+
+
+        //}
+        //if (Input.GetKey(KeyCode.D))
+        //{
+        //    rotation += 1;
+        //    transform.localRotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, Mathf.Clamp(rotation, 10, 180));
+
+        //}
+        //transform.localRotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, Mathf.Clamp(rotation, 10, 180));
+    }
+    void GetKeyToShoot()
+    {
         //nguoi choi 1 Bắn
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
@@ -33,14 +60,18 @@ public class KeyboardManager : MonoBehaviour {
             bullet = (GameObject)Instantiate(srcBullets[0], cannon1.transform.position, cannon1.transform.rotation);
             bullet.name = "bullet" + 1;
             bullet.transform.SetParent(bulletZone, true);
+            ActionPlayers.player1.PayAmount(ActionPlayers.player1._bullet._value);
+            Debug.Log("1 " + ActionPlayers.player1._wallet._value);
 
-                    }
+        }
         //nguoi choi 2 Bắn
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             bullet = (GameObject)Instantiate(srcBullets[0], cannon2.transform.position, cannon2.transform.rotation);
             bullet.name = "bullet" + 2;
             bullet.transform.SetParent(bulletZone, true);
+            ActionPlayers.player2.PayAmount(ActionPlayers.player2._bullet._value);
+            Debug.Log("2 " + ActionPlayers.player2._wallet._value);
 
         }
         //nguoi choi 3 Bắn
@@ -59,5 +90,7 @@ public class KeyboardManager : MonoBehaviour {
             bullet.transform.SetParent(bulletZone, true);
 
         }
+
+
     }
 }
