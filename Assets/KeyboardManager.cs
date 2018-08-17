@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class KeyboardManager : MonoBehaviour
 {
+    BulletSeller bulletseller;
+    private Player player1, player2, player3, player4;
+    private Bullet bullet1, bullet2; //note
 
     public GameObject[] srcBullets, srcCannons, srcWebs;
     private GameObject bullet, cannon1, cannon2, cannon3, cannon4;
@@ -12,12 +15,21 @@ public class KeyboardManager : MonoBehaviour
     // Use this for initialization
     void Awake()
     {
+        bulletseller = new BulletSeller();
         srcBullets = Resources.LoadAll<GameObject>("Bullets");
         srcCannons = Resources.LoadAll<GameObject>("Cannons");
         srcWebs = Resources.LoadAll<GameObject>("Webs");
+        player1 = new Player("player1", 100, 1);
+        player2 = new Player("player2", 100, 1);
+        player3 = new Player("player3", 100, 1);
+        player4 = new Player("player4", 100, 1);
+
+
     }
     private void Start()
     {
+
+
         cannon1 = GameObject.Find("/CannonObject/baseCannon1/cannon");
         cannon2 = GameObject.Find("/CannonObject/baseCannon2/cannon");
         cannon3 = GameObject.Find("/CannonObject/baseCannon3/cannon");
@@ -60,8 +72,10 @@ public class KeyboardManager : MonoBehaviour
             bullet = (GameObject)Instantiate(srcBullets[0], cannon1.transform.position, cannon1.transform.rotation);
             bullet.name = "bullet" + 1;
             bullet.transform.SetParent(bulletZone, true);
-            ActionPlayers.player1.PayAmount(ActionPlayers.player1._bullet._value);
-            Debug.Log("1 " + ActionPlayers.player1._wallet._value);
+
+            bulletseller.SellBullet(player1);
+            Debug.Log("player 1: " + player1.WatchWallet());
+
 
         }
         //nguoi choi 2 Bắn
@@ -70,8 +84,9 @@ public class KeyboardManager : MonoBehaviour
             bullet = (GameObject)Instantiate(srcBullets[0], cannon2.transform.position, cannon2.transform.rotation);
             bullet.name = "bullet" + 2;
             bullet.transform.SetParent(bulletZone, true);
-            ActionPlayers.player2.PayAmount(ActionPlayers.player2._bullet._value);
-            Debug.Log("2 " + ActionPlayers.player2._wallet._value);
+
+            bulletseller.SellBullet(player2);
+            Debug.Log("player 2: " + player2.WatchWallet());
 
         }
         //nguoi choi 3 Bắn
@@ -81,6 +96,9 @@ public class KeyboardManager : MonoBehaviour
             bullet.name = "bullet" + 3;
             bullet.transform.SetParent(bulletZone, true);
 
+            bulletseller.SellBullet(player3);
+            Debug.Log("player 3: " + player3.WatchWallet());
+
         }
         //nguoi choi 3 Bắn
         if (Input.GetKeyDown(KeyCode.Alpha4))
@@ -88,6 +106,9 @@ public class KeyboardManager : MonoBehaviour
             bullet = (GameObject)Instantiate(srcBullets[0], cannon4.transform.position, cannon4.transform.rotation);
             bullet.name = "bullet" + 4;
             bullet.transform.SetParent(bulletZone, true);
+
+            bulletseller.SellBullet(player4);
+            Debug.Log("player 4: " + player4.WatchWallet());
 
         }
 
