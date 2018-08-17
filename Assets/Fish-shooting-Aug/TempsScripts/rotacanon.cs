@@ -27,17 +27,18 @@ public class rotacanon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("rota" + transform.rotation.z);
         // su kien xoay trai vaf xoay phai
         if (Input.GetKey(KeyCode.A))
         {
             rotation += 1;
-            transform.rotation = transform.rotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, Mathf.Clamp(rotation, -80, 80));
+            transform.localRotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, Mathf.Clamp(rotation, 10, 180));
 
         }
         else if (Input.GetKey(KeyCode.D))
         {
             rotation -= 1;
-            transform.rotation = transform.rotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, Mathf.Clamp(rotation, -80, 80));
+            transform.localRotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, Mathf.Clamp(rotation, 10, 180));
         }
         // su kien ban
         if (Input.GetKeyDown(KeyCode.Space))
