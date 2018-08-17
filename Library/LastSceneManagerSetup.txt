@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Fish-shooting-Aug/Scenes/Nhan.unity
+  isLoaded: 1
+  isActive: 1
