@@ -303,6 +303,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Bunker.cs" />
     <Compile Include="Assets\Fish-shooting-Aug\Scripts\Wallet.cs" />
     <Compile Include="Assets\Fish-shooting-Aug\TempsScripts\CaBatLuoi.cs" />
     <Compile Include="Assets\Fish-shooting-Aug\TempsScripts\Destroy.cs" />
@@ -322,6 +323,9 @@
     <Compile Include="Assets\Fish-shooting-Aug\TempsScripts\rotacanon.cs" />
     <Compile Include="Assets\Fish-shooting-Aug\TempsScripts\SpecialMap.cs" />
     <Compile Include="Assets\Fish-shooting-Aug\TempsScripts\webinstan.cs" />
+    <Compile Include="Assets\InstanPlayers.cs" />
+    <Compile Include="Assets\KeyboardManager.cs" />
+    <Compile Include="Assets\ShootEvent.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Styles\Main_Dark.uss" />

@@ -4,42 +4,42 @@ using UnityEngine;
 
 public class Wallet : MonoBehaviour
 {
-    Player player;
-    Bullet bullet;
-    Fish fish;
-    BulletSeller eventShoot; //ban dan
-    FishBuyer eventCatch; //trung ca
-    CoinBuyer eventImport; //nap Coin
-    CoinSeller eventExport; //xã coin
+    //Player player;
+    //Bullet bullet;
+    //Fish fish;
+    //BulletSeller eventShoot; //ban dan
+    //FishBuyer eventCatch; //trung ca
+    //CoinBuyer eventImport; //nap Coin
+    //CoinSeller eventExport; //xã coin
 
     //khoi tao nguoi choi player 1 co 100 vang va dang dung sung 5
     private void Awake()
     {
-        bullet = new Bullet(15);
-        player = new Player("player", 0, 5);
-        fish = new Fish("CaLaHan", 25);
-        eventShoot = new BulletSeller();
-        eventCatch = new FishBuyer();
-        eventImport = new CoinBuyer();
-        eventExport = new CoinSeller();
+        //bullet = new Bullet(15);
+        //player = new Player("player", 0, 5);
+        //fish = new Fish("CaLaHan", 25);
+        //eventShoot = new BulletSeller();
+        //eventCatch = new FishBuyer();
+        //eventImport = new CoinBuyer();
+        //eventExport = new CoinSeller();
 
 
     }
     private void Start()
     {
-        player.Info();
-        Debug.Log("Mới dô game: TIỀN: " + player._wallet._value);
-        for (int i = 0; i < 20; i++) { eventImport.BuyCoin(player); }
-        Debug.Log("Nạp 20 thẻ: TIỀN: " + player._wallet._value);
-        Debug.Log("Chọn đạn: VALUE: " + bullet._value);
-        eventShoot.SellBullet(player, bullet);
-        Debug.Log("Bắn 1 viên đạn: TIỀN: " + player._wallet._value);
-        eventCatch.BuyFish(player, fish);
-        Debug.Log("Trúng 1 con cá +25: TIỀN: " + player._wallet._value);
-        eventExport.SellCoin(player);
-        Debug.Log("Xã 1 coin: TIỀN: " + player._wallet._value);
-        eventExport.SellAllCoins(player);
-        Debug.Log("Xã ALL coin: TIỀN: " + player._wallet._value);
+        //player.Info();
+        //Debug.Log("Mới dô game: TIỀN: " + player._wallet._value);
+        //for (int i = 0; i < 20; i++) { eventImport.BuyCoin(player); }
+        //Debug.Log("Nạp 20 thẻ: TIỀN: " + player._wallet._value);
+        //Debug.Log("Chọn đạn: VALUE: " + bullet._value);
+        //eventShoot.SellBullet(player, bullet);
+        //Debug.Log("Bắn 1 viên đạn: TIỀN: " + player._wallet._value);
+        //eventCatch.BuyFish(player, fish);
+        //Debug.Log("Trúng 1 con cá +25: TIỀN: " + player._wallet._value);
+        //eventExport.SellCoin(player);
+        //Debug.Log("Xã 1 coin: TIỀN: " + player._wallet._value);
+        //eventExport.SellAllCoins(player);
+        //Debug.Log("Xã ALL coin: TIỀN: " + player._wallet._value);
 
 
 
@@ -99,18 +99,18 @@ public class Player
     {
         _name = "Clone";
         _wallet = new Wallet(0);
-        _bullet = 0;
+        _bullet = new Bullet(0);
     }
     public Player(string name, int wallet, int bullet)
     {
         _name = name;
         _wallet = new Wallet(wallet);
-        _bullet = bullet;
+        _bullet = new Bullet(wallet);
     }
 
     public string _name { get; private set; }
     public Wallet _wallet;
-    public int _bullet;
+    public Bullet _bullet;
 
     public int PayAmount(int amountToPay)
     {

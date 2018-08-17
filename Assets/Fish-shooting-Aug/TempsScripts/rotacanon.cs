@@ -27,7 +27,7 @@ public class rotacanon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("rota" + transform.rotation.z);
+        //Debug.Log("rota" + transform.rotation.z);
         // su kien xoay trai vaf xoay phai
         if (Input.GetKey(KeyCode.A))
         {
@@ -44,10 +44,10 @@ public class rotacanon : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             aniguns.SetBool("Fire", true);
-            allbullet = (GameObject)Instantiate(bullet, tras.position, tras.rotation);
+            //allbullet = (GameObject)Instantiate(bullet, tras.position, tras.rotation);
             Audio.PlayOneShot(gun);
-            // txtpoint.addcscore(-scorespend);
-            allbullet.transform.SetParent(noiChua, true);
+            //// txtpoint.addcscore(-scorespend);
+            //allbullet.transform.SetParent(noiChua, true);
         }
         else aniguns.SetBool("Fire", false);
         // doi sung sau
