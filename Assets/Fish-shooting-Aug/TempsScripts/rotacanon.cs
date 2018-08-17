@@ -13,7 +13,7 @@ public class rotacanon : MonoBehaviour
     public AudioClip gun;
     GameObject allbullet;
     float t;
-    static float rotation;
+    static float rotation=90;
     private Animator aniguns;
     // Use this for initialization
     private void Awake()
@@ -31,14 +31,14 @@ public class rotacanon : MonoBehaviour
         // su kien xoay trai vaf xoay phai
         if (Input.GetKey(KeyCode.A))
         {
-            //rotation += 1;
-            transform.localRotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, Mathf.Clamp(rotation+1, 10, 180));
+            rotation = Mathf.Clamp(++rotation, 10, 170);
+            transform.localRotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, rotation);
 
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            //rotation -= 1;
-            transform.localRotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, Mathf.Clamp(rotation+1, 10, 180));
+            rotation = Mathf.Clamp(--rotation, 10, 170);
+            transform.localRotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, rotation);
         }
         // su kien ban
         if (Input.GetKeyDown(KeyCode.Space))
