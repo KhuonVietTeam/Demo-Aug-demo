@@ -303,25 +303,25 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Fish-shooting-Aug\Scripts\CaBatLuoi.cs" />
-    <Compile Include="Assets\Fish-shooting-Aug\Scripts\Destroy.cs" />
-    <Compile Include="Assets\Fish-shooting-Aug\Scripts\DestroyCoin.cs" />
-    <Compile Include="Assets\Fish-shooting-Aug\Scripts\DestroyFishGroup.cs" />
-    <Compile Include="Assets\Fish-shooting-Aug\Scripts\FishCatched.cs" />
-    <Compile Include="Assets\Fish-shooting-Aug\Scripts\Fishes.cs" />
-    <Compile Include="Assets\Fish-shooting-Aug\Scripts\FishGroup.cs" />
-    <Compile Include="Assets\Fish-shooting-Aug\Scripts\Gun.cs" />
-    <Compile Include="Assets\Fish-shooting-Aug\Scripts\Luoibatca.cs" />
-    <Compile Include="Assets\Fish-shooting-Aug\Scripts\Move.cs" />
-    <Compile Include="Assets\Fish-shooting-Aug\Scripts\MoveCircle.cs" />
-    <Compile Include="Assets\Fish-shooting-Aug\Scripts\MoveSin.cs" />
-    <Compile Include="Assets\Fish-shooting-Aug\Scripts\MoveSinGroup.cs" />
-    <Compile Include="Assets\Fish-shooting-Aug\Scripts\Point.cs" />
-    <Compile Include="Assets\Fish-shooting-Aug\Scripts\rapefire.cs" />
-    <Compile Include="Assets\Fish-shooting-Aug\Scripts\rotacanon.cs" />
-    <Compile Include="Assets\Fish-shooting-Aug\Scripts\SpecialMap.cs" />
     <Compile Include="Assets\Fish-shooting-Aug\Scripts\Wallet.cs" />
-    <Compile Include="Assets\Fish-shooting-Aug\Scripts\webinstan.cs" />
+    <Compile Include="Assets\Fish-shooting-Aug\TempsScripts\CaBatLuoi.cs" />
+    <Compile Include="Assets\Fish-shooting-Aug\TempsScripts\Destroy.cs" />
+    <Compile Include="Assets\Fish-shooting-Aug\TempsScripts\DestroyCoin.cs" />
+    <Compile Include="Assets\Fish-shooting-Aug\TempsScripts\DestroyFishGroup.cs" />
+    <Compile Include="Assets\Fish-shooting-Aug\TempsScripts\FishCatched.cs" />
+    <Compile Include="Assets\Fish-shooting-Aug\TempsScripts\Fishes.cs" />
+    <Compile Include="Assets\Fish-shooting-Aug\TempsScripts\FishGroup.cs" />
+    <Compile Include="Assets\Fish-shooting-Aug\TempsScripts\Gun.cs" />
+    <Compile Include="Assets\Fish-shooting-Aug\TempsScripts\Luoibatca.cs" />
+    <Compile Include="Assets\Fish-shooting-Aug\TempsScripts\Move.cs" />
+    <Compile Include="Assets\Fish-shooting-Aug\TempsScripts\MoveCircle.cs" />
+    <Compile Include="Assets\Fish-shooting-Aug\TempsScripts\MoveSin.cs" />
+    <Compile Include="Assets\Fish-shooting-Aug\TempsScripts\MoveSinGroup.cs" />
+    <Compile Include="Assets\Fish-shooting-Aug\TempsScripts\Point.cs" />
+    <Compile Include="Assets\Fish-shooting-Aug\TempsScripts\rapefire.cs" />
+    <Compile Include="Assets\Fish-shooting-Aug\TempsScripts\rotacanon.cs" />
+    <Compile Include="Assets\Fish-shooting-Aug\TempsScripts\SpecialMap.cs" />
+    <Compile Include="Assets\Fish-shooting-Aug\TempsScripts\webinstan.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Styles\Main_Dark.uss" />
