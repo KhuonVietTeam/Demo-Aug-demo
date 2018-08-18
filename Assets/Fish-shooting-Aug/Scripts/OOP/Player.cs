@@ -2,18 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player {
+public class Player
+{
 
     //ham dung
     public Player()
     {
-        name = "Clone";
-        wallet = new Wallet(0);
-        bullet = new Bullet(0);
+        //name = "Clone";
+        //wallet = new Wallet(0);
+        //bullet = new Bullet(0);
+        
     }
     public Player(string _name, int _wallet, int _bullet)
     {
-        name = _name;        
+        name = _name;
         wallet = new Wallet(_wallet);
         bullet = new Bullet(_bullet);
     }

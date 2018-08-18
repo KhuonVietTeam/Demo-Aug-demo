@@ -37,13 +37,55 @@ public class KeyboardManager : MonoBehaviour
     {
 
         GetKeyToShoot();
-        //GetKeyToRotate();
+        GetKeyToRotate();
 
 
     }
     void GetKeyToRotate()
     {
-        
+        //nguoi choi 1
+        if (Input.GetKey(KeyCode.Q))
+        {
+            cannon1.transform.localRotation = Quaternion.Euler(cannon1.transform.rotation.x, cannon1.transform.rotation.y, Mathf.Clamp(cannon1.transform.localRotation.eulerAngles.z + 2, 10, 170));
+
+        }
+        else if (Input.GetKey(KeyCode.W))
+        {
+            cannon1.transform.localRotation = Quaternion.Euler(cannon1.transform.rotation.x, cannon1.transform.rotation.y, Mathf.Clamp(cannon1.transform.localRotation.eulerAngles.z - 2, 10, 170));
+        }
+
+        //nguoi choi 2
+        if (Input.GetKey(KeyCode.E))
+        {
+            cannon2.transform.localRotation = Quaternion.Euler(cannon2.transform.rotation.x, cannon2.transform.rotation.y, Mathf.Clamp(cannon2.transform.localRotation.eulerAngles.z + 2, 10, 170));
+
+        }
+        else if (Input.GetKey(KeyCode.R))
+        {
+            cannon2.transform.localRotation = Quaternion.Euler(cannon2.transform.rotation.x, cannon2.transform.rotation.y, Mathf.Clamp(cannon2.transform.localRotation.eulerAngles.z - 2, 10, 170));
+        }
+
+        //nguoi choi 3
+        if (Input.GetKey(KeyCode.T))
+        {
+            cannon3.transform.localRotation = Quaternion.Euler(cannon3.transform.rotation.x, cannon3.transform.rotation.y, Mathf.Clamp(cannon3.transform.localRotation.eulerAngles.z + 2, 10, 170));
+
+        }
+        else if (Input.GetKey(KeyCode.Y))
+        {
+            cannon3.transform.localRotation = Quaternion.Euler(cannon3.transform.rotation.x, cannon3.transform.rotation.y, Mathf.Clamp(cannon3.transform.localRotation.eulerAngles.z - 2, 10, 170));
+        }
+
+        //nguoi choi 4
+        if (Input.GetKey(KeyCode.U))
+        {
+            cannon4.transform.localRotation = Quaternion.Euler(cannon4.transform.rotation.x, cannon4.transform.rotation.y, Mathf.Clamp(cannon4.transform.localRotation.eulerAngles.z + 2, 10, 170));
+
+        }
+        else if (Input.GetKey(KeyCode.I))
+        {
+            cannon4.transform.localRotation = Quaternion.Euler(cannon4.transform.rotation.x, cannon4.transform.rotation.y, Mathf.Clamp(cannon4.transform.localRotation.eulerAngles.z - 2, 10, 170));
+        }
     }
     void GetKeyToShoot()
     {

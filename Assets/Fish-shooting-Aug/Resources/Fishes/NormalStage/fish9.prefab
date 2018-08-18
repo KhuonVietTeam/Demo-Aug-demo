@@ -129,6 +129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bloodFish: 1
+  benefitValue: 0
 --- !u!114 &114403245248047762
 MonoBehaviour:
   m_ObjectHideFlags: 1

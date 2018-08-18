@@ -113,6 +113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bloodFish: 1
+  benefitValue: 0
 --- !u!212 &212726249312652996
 SpriteRenderer:
   m_ObjectHideFlags: 1

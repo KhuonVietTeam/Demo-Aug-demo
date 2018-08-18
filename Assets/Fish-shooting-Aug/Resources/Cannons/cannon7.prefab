@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4003539543336062}
   - component: {fileID: 212787304324350246}
   - component: {fileID: 95309167779604944}
-  - component: {fileID: 114933847851848702}
   - component: {fileID: 82530388857309688}
   - component: {fileID: 61903186690465554}
   m_Layer: 0
@@ -182,26 +181,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114933847851848702
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1081148319858430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16e1f6c4ce901c6438d4aa951c163deb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 90
-  noiChua: {fileID: 0}
-  bullet: {fileID: 1693022680123128, guid: 37de66656dee5ce44aa1868460c1145e, type: 2}
-  nextgun: {fileID: 1081148319858430}
-  pregun: {fileID: 1094287961559382, guid: 52aefdc6be081c149b1a3de62849c32a, type: 2}
-  tras: {fileID: 4003539543336062}
-  scorespend: 1
-  Audio: {fileID: 82530388857309688}
-  gun: {fileID: 8300000, guid: ca6fa8d0dfcef534caf59c8418facf06, type: 3}
 --- !u!212 &212787304324350246
 SpriteRenderer:
   m_ObjectHideFlags: 1
