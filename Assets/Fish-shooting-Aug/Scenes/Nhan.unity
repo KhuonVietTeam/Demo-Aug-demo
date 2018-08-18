@@ -523,7 +523,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad715fb4d7b7eb745ab5e36e7764b409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: NHAN
 --- !u!114 &315827380
 MonoBehaviour:
   m_ObjectHideFlags: 0
