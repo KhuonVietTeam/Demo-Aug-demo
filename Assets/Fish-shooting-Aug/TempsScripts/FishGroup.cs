@@ -17,7 +17,7 @@ public class FishGroup : MonoBehaviour
     GameObject allfish;
     void Awake()
     {
-        srcfish = Resources.LoadAll<GameObject>("FishGroup");
+        srcfish = Resources.LoadAll<GameObject>("Fishes/FishGroup");
 
     }
     void Start()
