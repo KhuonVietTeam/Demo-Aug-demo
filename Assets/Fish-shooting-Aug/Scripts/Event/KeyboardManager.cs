@@ -5,7 +5,6 @@ using UnityEngine;
 public class KeyboardManager : MonoBehaviour
 {
     BulletSeller bulletseller;
-    private Player player1, player2, player3, player4;
     private Bullet bullet1, bullet2; //note
 
     public GameObject[] srcBullets, srcCannons, srcWebs;
@@ -19,10 +18,7 @@ public class KeyboardManager : MonoBehaviour
         srcBullets = Resources.LoadAll<GameObject>("Bullets");
         srcCannons = Resources.LoadAll<GameObject>("Cannons");
         srcWebs = Resources.LoadAll<GameObject>("Webs");
-        player1 = new Player("player1", 100, 1);
-        player2 = new Player("player2", 100, 1);
-        player3 = new Player("player3", 100, 1);
-        player4 = new Player("player4", 100, 1);
+        
 
 
     }
@@ -49,32 +45,32 @@ public class KeyboardManager : MonoBehaviour
     }
     void GetKeyToRotate()
     {
-        //if (Input.GetKey(KeyCode.A))
-        //{
-        //    rotation += 1;
 
-
-        //}
-        //if (Input.GetKey(KeyCode.D))
-        //{
-        //    rotation += 1;
-        //    transform.localRotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, Mathf.Clamp(rotation, 10, 180));
-
-        //}
-        //transform.localRotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, Mathf.Clamp(rotation, 10, 180));
     }
     void GetKeyToShoot()
     {
         //nguoi choi 1 Bắn
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
+            if (PlayerManager.player1.WatchWallet() > 0)
+            {
+                bullet = (GameObject)Instantiate(srcBullets[0], cannon1.transform.position, cannon1.transform.rotation);
+                bullet.name = "bullet" + 1;
+                bullet.transform.SetParent(bulletZone, true);
 
-            bullet = (GameObject)Instantiate(srcBullets[0], cannon1.transform.position, cannon1.transform.rotation);
-            bullet.name = "bullet" + 1;
-            bullet.transform.SetParent(bulletZone, true);
+                bullet.GetComponent<BulletInfo>().firer = PlayerManager.player1.name; //fill .firer to who is shooted
+                bullet.GetComponent<BulletInfo>().rangePower = PlayerManager.player1.WatchBullet(); //fill .rangePower to how many range of power
 
-            bulletseller.SellBullet(player1);
-            Debug.Log("player 1: " + player1.WatchWallet());
+                bulletseller.SellBullet(PlayerManager.player1);
+
+                Debug.Log("player 1: " + PlayerManager.player1.WatchWallet());
+
+            }
+            else
+            {
+                Debug.Log("player 1: Gameover");
+
+            }
 
 
         }
@@ -85,8 +81,8 @@ public class KeyboardManager : MonoBehaviour
             bullet.name = "bullet" + 2;
             bullet.transform.SetParent(bulletZone, true);
 
-            bulletseller.SellBullet(player2);
-            Debug.Log("player 2: " + player2.WatchWallet());
+            bulletseller.SellBullet(PlayerManager.player2);
+            Debug.Log("player 2: " + PlayerManager.player2.WatchWallet());
 
         }
         //nguoi choi 3 Bắn
@@ -96,8 +92,8 @@ public class KeyboardManager : MonoBehaviour
             bullet.name = "bullet" + 3;
             bullet.transform.SetParent(bulletZone, true);
 
-            bulletseller.SellBullet(player3);
-            Debug.Log("player 3: " + player3.WatchWallet());
+            bulletseller.SellBullet(PlayerManager.player3);
+            Debug.Log("player 3: " + PlayerManager.player3.WatchWallet());
 
         }
         //nguoi choi 3 Bắn
@@ -107,8 +103,8 @@ public class KeyboardManager : MonoBehaviour
             bullet.name = "bullet" + 4;
             bullet.transform.SetParent(bulletZone, true);
 
-            bulletseller.SellBullet(player4);
-            Debug.Log("player 4: " + player4.WatchWallet());
+            bulletseller.SellBullet(PlayerManager.player4);
+            Debug.Log("player 4: " + PlayerManager.player4.WatchWallet());
 
         }
 

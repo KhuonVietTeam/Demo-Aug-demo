@@ -23,8 +23,8 @@ GameObject:
   - component: {fileID: 95847086517900522}
   - component: {fileID: 60283478851326904}
   - component: {fileID: 114515489046156234}
-  - component: {fileID: 114817026365072780}
   - component: {fileID: 114064063720076402}
+  - component: {fileID: 114034276892077356}
   m_Layer: 0
   m_Name: fish3
   m_TagString: fish
@@ -100,6 +100,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114034276892077356
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1607332168488044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66741083a02496049b8b0d08b4dc9889, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodFish: 1
 --- !u!114 &114064063720076402
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -123,19 +135,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
---- !u!114 &114817026365072780
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1607332168488044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22ff697e6bb103f4d8d93b6a078dfe9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 0}
-  allCoin: {fileID: 1027566523648232, guid: 217c3a6b777611849af1fee5270b0cea, type: 2}
 --- !u!212 &212986553509871442
 SpriteRenderer:
   m_ObjectHideFlags: 1

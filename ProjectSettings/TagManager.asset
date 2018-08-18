@@ -6,9 +6,9 @@ TagManager:
   tags:
   - FirePoint
   - bullet
-  - web
   - Undefined
   - fish
+  - Web
   layers:
   - Default
   - TransparentFX

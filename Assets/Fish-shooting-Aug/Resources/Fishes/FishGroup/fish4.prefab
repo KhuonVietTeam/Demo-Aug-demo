@@ -24,8 +24,8 @@ GameObject:
   - component: {fileID: 114959063766556892}
   - component: {fileID: 114827813789589106}
   - component: {fileID: 60339524650388218}
-  - component: {fileID: 114454002711390084}
   - component: {fileID: 114115545141487604}
+  - component: {fileID: 114306858546013292}
   m_Layer: 0
   m_Name: fish4
   m_TagString: fish
@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d215f8cd9a3bebc4ea1831df18120372, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114454002711390084
+--- !u!114 &114306858546013292
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -119,11 +119,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1469113930712928}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22ff697e6bb103f4d8d93b6a078dfe9d, type: 3}
+  m_Script: {fileID: 11500000, guid: 66741083a02496049b8b0d08b4dc9889, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 0}
-  allCoin: {fileID: 1027566523648232, guid: 217c3a6b777611849af1fee5270b0cea, type: 2}
+  bloodFish: 1
 --- !u!114 &114827813789589106
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -3,17 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 //Xã thẻ
 
-public class CoinSeller : MonoBehaviour {
+public class CoinSeller {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
 
     public void SellCoin(Player player)
     {

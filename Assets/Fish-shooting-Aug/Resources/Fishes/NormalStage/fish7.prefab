@@ -21,10 +21,10 @@ GameObject:
   - component: {fileID: 4932499818786558}
   - component: {fileID: 212900285978325618}
   - component: {fileID: 95359346751051290}
-  - component: {fileID: 114349916143721578}
   - component: {fileID: 114953218559463372}
   - component: {fileID: 60976822944583406}
-  - component: {fileID: 114592357014299980}
+  - component: {fileID: 114170437168055786}
+  - component: {fileID: 114985765367424008}
   m_Layer: 0
   m_Name: fish7
   m_TagString: fish
@@ -112,7 +112,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114349916143721578
+--- !u!114 &114170437168055786
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,22 +120,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1051387185932914}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e58a76e974fce1c47b326098339298d7, type: 3}
+  m_Script: {fileID: 11500000, guid: 66741083a02496049b8b0d08b4dc9889, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114592357014299980
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1051387185932914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22ff697e6bb103f4d8d93b6a078dfe9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 0}
-  allCoin: {fileID: 1027566523648232, guid: 217c3a6b777611849af1fee5270b0cea, type: 2}
+  bloodFish: 1
 --- !u!114 &114953218559463372
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -148,6 +136,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+--- !u!114 &114985765367424008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1051387185932914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e58a76e974fce1c47b326098339298d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212900285978325618
 SpriteRenderer:
   m_ObjectHideFlags: 1

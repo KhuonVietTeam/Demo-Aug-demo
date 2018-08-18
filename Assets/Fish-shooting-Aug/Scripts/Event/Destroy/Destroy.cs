@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Destroy : MonoBehaviour { //Pha huy ca theo toa do
+public class Destroy: MonoBehaviour { //Pha huy ca theo toa do
 	// Use this for initialization
 	void Start () {
         

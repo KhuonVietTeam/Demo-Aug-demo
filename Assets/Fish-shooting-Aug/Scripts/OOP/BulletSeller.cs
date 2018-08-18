@@ -2,17 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletSeller : MonoBehaviour {
+public class BulletSeller  {
     
-	// Use this for initialization
-	void Start () {
-		
-	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
     public void SellBullet(Player player) //xem lai
     {
 

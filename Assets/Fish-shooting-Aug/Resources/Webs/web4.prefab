@@ -23,9 +23,10 @@ GameObject:
   - component: {fileID: 114666575265901656}
   - component: {fileID: 50236523805146294}
   - component: {fileID: 60556151792371300}
+  - component: {fileID: 114857545426783590}
   m_Layer: 0
   m_Name: web4
-  m_TagString: web
+  m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -341,6 +342,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53f68e68c817f5543a403afeb9f65d9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114857545426783590
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1788731597807344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0823180a0d898b43834c90132b43c3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firer: 
+  rangePower: 0
 --- !u!212 &212337146034237504
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -2,17 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 // trung ca
-public class FishBuyer : MonoBehaviour {
+public class FishBuyer  {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
 
     public void BuyFish(Player player, Fish fish)

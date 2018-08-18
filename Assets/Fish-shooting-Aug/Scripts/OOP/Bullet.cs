@@ -2,20 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 // đạn bắn ra 
-public class Bullet : MonoBehaviour
+public class Bullet 
 {
 
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
     public Bullet()
     {

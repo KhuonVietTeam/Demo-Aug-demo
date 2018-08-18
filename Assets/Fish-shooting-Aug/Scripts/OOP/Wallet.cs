@@ -2,19 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Wallet : MonoBehaviour
+public class Wallet
 {
 
-    private void Awake()
-    {
-
-
-    }
-    private void Start()
-    {
-
-
-    }
     public Wallet()
     {
         Value = 0;

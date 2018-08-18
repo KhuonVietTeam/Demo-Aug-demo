@@ -23,9 +23,10 @@ GameObject:
   - component: {fileID: 114746086070458384}
   - component: {fileID: 50285651110929626}
   - component: {fileID: 60512126188263314}
+  - component: {fileID: 114160086916432840}
   m_Layer: 0
   m_Name: web5
-  m_TagString: web
+  m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -352,6 +353,19 @@ PolygonCollider2D:
       - {x: -0.13499999, y: 0.445}
       - {x: -0.16499999, y: 0.42499998}
       - {x: -0.155, y: 0.42499998}
+--- !u!114 &114160086916432840
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1698662261253502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0823180a0d898b43834c90132b43c3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firer: 
+  rangePower: 0
 --- !u!114 &114746086070458384
 MonoBehaviour:
   m_ObjectHideFlags: 1
