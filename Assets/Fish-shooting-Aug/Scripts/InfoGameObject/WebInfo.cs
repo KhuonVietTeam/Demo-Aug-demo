@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class WebInfo : MonoBehaviour {
-    public string firer;
+    public Player firer;
     public int rangePower = 0;
     // Use this for initialization
     void Start () {

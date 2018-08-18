@@ -56,12 +56,12 @@ public class KeyboardManager : MonoBehaviour
                 bullet.name = "bullet" + 1;
                 bullet.transform.SetParent(bulletZone, true);
 
-                bullet.GetComponent<BulletInfo>().firer = PlayerManager.player1.name; //fill .firer to who is shooted
+                bullet.GetComponent<BulletInfo>().firer = PlayerManager.player1; //fill .firer to who is shooted
                 bullet.GetComponent<BulletInfo>().rangePower = PlayerManager.player1.WatchBullet(); //fill .rangePower to how many range of power
 
                 EventManager.bulletseller.SellBullet(PlayerManager.player1);
 
-                //Debug.Log("player 1: " + PlayerManager.player1.WatchWallet());
+                Debug.Log("player 1: " + PlayerManager.player1.WatchWallet());
 
             }
             else
@@ -82,7 +82,7 @@ public class KeyboardManager : MonoBehaviour
                 bullet.name = "bullet" + 2;
                 bullet.transform.SetParent(bulletZone, true);
 
-                bullet.GetComponent<BulletInfo>().firer = PlayerManager.player2.name; //fill .firer to who is shooted
+                bullet.GetComponent<BulletInfo>().firer = PlayerManager.player2; //fill .firer to who is shooted
                 bullet.GetComponent<BulletInfo>().rangePower = PlayerManager.player2.WatchBullet(); //fill .rangePower to how many range of power
 
                 EventManager.bulletseller.SellBullet(PlayerManager.player2);
@@ -106,7 +106,7 @@ public class KeyboardManager : MonoBehaviour
                 bullet.name = "bullet" + 3;
                 bullet.transform.SetParent(bulletZone, true);
 
-                bullet.GetComponent<BulletInfo>().firer = PlayerManager.player3.name; //fill .firer to who is shooted
+                bullet.GetComponent<BulletInfo>().firer = PlayerManager.player3; //fill .firer to who is shooted
                 bullet.GetComponent<BulletInfo>().rangePower = PlayerManager.player3.WatchBullet(); //fill .rangePower to how many range of power
 
                 EventManager.bulletseller.SellBullet(PlayerManager.player3);
@@ -131,7 +131,7 @@ public class KeyboardManager : MonoBehaviour
                 bullet.name = "bullet" + 4;
                 bullet.transform.SetParent(bulletZone, true);
 
-                bullet.GetComponent<BulletInfo>().firer = PlayerManager.player4.name; //fill .firer to who is shooted
+                bullet.GetComponent<BulletInfo>().firer = PlayerManager.player4; //fill .firer to who is shooted
                 bullet.GetComponent<BulletInfo>().rangePower = PlayerManager.player4.WatchBullet(); //fill .rangePower to how many range of power
 
                 EventManager.bulletseller.SellBullet(PlayerManager.player4);

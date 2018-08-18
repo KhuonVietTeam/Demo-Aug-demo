@@ -4,20 +4,21 @@ using UnityEngine;
 
 public class FishShooted : MonoBehaviour {
     public int bloodFish = 1;
-    public string beKilledBy;
-    //public int beDamagedBy;
+    public Player beKilledBy;
+    public int benefitValue;
     private GameObject srcCoin,coin;
     private Transform CoinZone;
-
+    Fish fish;
     void Awake()
     {
+        benefitValue = bloodFish;  // Default: Gia tri fish = Máu cá
         srcCoin = Resources.Load<GameObject>("Coin/coinAni");
-
+        fish = new Fish(this.gameObject.name,benefitValue);
 
     }
     // Use this for initialization
     void Start () {
-
+        
         CoinZone = transform.Find("/CoinZone");
 
     }
@@ -30,8 +31,10 @@ public class FishShooted : MonoBehaviour {
             coin = Instantiate(srcCoin, transform.position, transform.rotation) as GameObject;
             coin.name = "coin";
             coin.transform.SetParent(CoinZone, true);
+            EventManager.fishbuyer.BuyFish(beKilledBy, fish);
+            Debug.Log("be killed by: "+beKilledBy.name);
+            Debug.Log("Benefit: " + beKilledBy.WatchWallet());
 
-            Debug.Log("be killed by: "+beKilledBy);
         }
     }
 
