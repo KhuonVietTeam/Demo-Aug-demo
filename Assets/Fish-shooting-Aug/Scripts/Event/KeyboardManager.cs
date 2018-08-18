@@ -18,7 +18,7 @@ public class KeyboardManager : MonoBehaviour
         srcBullets = Resources.LoadAll<GameObject>("Bullets");
         srcCannons = Resources.LoadAll<GameObject>("Cannons");
         srcWebs = Resources.LoadAll<GameObject>("Webs");
-        
+
 
 
     }
@@ -63,7 +63,7 @@ public class KeyboardManager : MonoBehaviour
 
                 bulletseller.SellBullet(PlayerManager.player1);
 
-                Debug.Log("player 1: " + PlayerManager.player1.WatchWallet());
+                //Debug.Log("player 1: " + PlayerManager.player1.WatchWallet());
 
             }
             else
@@ -77,34 +77,75 @@ public class KeyboardManager : MonoBehaviour
         //nguoi choi 2 Bắn
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            bullet = (GameObject)Instantiate(srcBullets[0], cannon2.transform.position, cannon2.transform.rotation);
-            bullet.name = "bullet" + 2;
-            bullet.transform.SetParent(bulletZone, true);
 
-            bulletseller.SellBullet(PlayerManager.player2);
-            Debug.Log("player 2: " + PlayerManager.player2.WatchWallet());
+            if (PlayerManager.player2.WatchWallet() > 0)
+            {
+                bullet = (GameObject)Instantiate(srcBullets[0], cannon2.transform.position, cannon2.transform.rotation);
+                bullet.name = "bullet" + 2;
+                bullet.transform.SetParent(bulletZone, true);
+
+                bullet.GetComponent<BulletInfo>().firer = PlayerManager.player2.name; //fill .firer to who is shooted
+                bullet.GetComponent<BulletInfo>().rangePower = PlayerManager.player2.WatchBullet(); //fill .rangePower to how many range of power
+
+                bulletseller.SellBullet(PlayerManager.player2);
+
+                //Debug.Log("player 2: " + PlayerManager.player2.WatchWallet());
+
+            }
+            else
+            {
+                Debug.Log("player 2: Gameover");
+
+            }
 
         }
         //nguoi choi 3 Bắn
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            bullet = (GameObject)Instantiate(srcBullets[0], cannon3.transform.position, cannon3.transform.rotation);
-            bullet.name = "bullet" + 3;
-            bullet.transform.SetParent(bulletZone, true);
+            if (PlayerManager.player3.WatchWallet() > 0)
+            {
+                bullet = (GameObject)Instantiate(srcBullets[0], cannon3.transform.position, cannon3.transform.rotation);
+                bullet.name = "bullet" + 3;
+                bullet.transform.SetParent(bulletZone, true);
 
-            bulletseller.SellBullet(PlayerManager.player3);
-            Debug.Log("player 3: " + PlayerManager.player3.WatchWallet());
+                bullet.GetComponent<BulletInfo>().firer = PlayerManager.player3.name; //fill .firer to who is shooted
+                bullet.GetComponent<BulletInfo>().rangePower = PlayerManager.player3.WatchBullet(); //fill .rangePower to how many range of power
 
+                bulletseller.SellBullet(PlayerManager.player3);
+
+                //Debug.Log("player 3: " + PlayerManager.player3.WatchWallet());
+
+            }
+            else
+            {
+                Debug.Log("player 3: Gameover");
+
+            }
         }
+
         //nguoi choi 3 Bắn
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            bullet = (GameObject)Instantiate(srcBullets[0], cannon4.transform.position, cannon4.transform.rotation);
-            bullet.name = "bullet" + 4;
-            bullet.transform.SetParent(bulletZone, true);
 
-            bulletseller.SellBullet(PlayerManager.player4);
-            Debug.Log("player 4: " + PlayerManager.player4.WatchWallet());
+            if (PlayerManager.player4.WatchWallet() > 0)
+            {
+                bullet = (GameObject)Instantiate(srcBullets[0], cannon4.transform.position, cannon4.transform.rotation);
+                bullet.name = "bullet" + 4;
+                bullet.transform.SetParent(bulletZone, true);
+
+                bullet.GetComponent<BulletInfo>().firer = PlayerManager.player4.name; //fill .firer to who is shooted
+                bullet.GetComponent<BulletInfo>().rangePower = PlayerManager.player4.WatchBullet(); //fill .rangePower to how many range of power
+
+                bulletseller.SellBullet(PlayerManager.player4);
+
+                //Debug.Log("player 4: " + PlayerManager.player4.WatchWallet());
+
+            }
+            else
+            {
+                Debug.Log("player 4: Gameover");
+
+            }
 
         }
 

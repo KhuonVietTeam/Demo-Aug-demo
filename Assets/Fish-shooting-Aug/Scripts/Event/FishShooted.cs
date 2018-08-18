@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class FishShooted : MonoBehaviour {
     public int bloodFish = 1;
+    public string beKilledBy;
+    //public int beDamagedBy;
     private GameObject srcCoin,coin;
     private Transform CoinZone;
 
@@ -29,7 +31,7 @@ public class FishShooted : MonoBehaviour {
             coin.name = "coin";
             coin.transform.SetParent(CoinZone, true);
 
-
+            Debug.Log("be killed by: "+beKilledBy);
         }
     }
 
@@ -40,8 +42,12 @@ public class FishShooted : MonoBehaviour {
         {
             if(Random.Range(0,2) < 1)
             {
-                bloodFish--;
-
+                //máu của cá -= sát thương của Web
+                bloodFish -= collision.gameObject.GetComponent<WebInfo>().rangePower;
+                if(bloodFish == 0) //nếu cá bị kết liễu
+                {
+                    beKilledBy = collision.gameObject.GetComponent<WebInfo>().firer;
+                }
             }
 
         }

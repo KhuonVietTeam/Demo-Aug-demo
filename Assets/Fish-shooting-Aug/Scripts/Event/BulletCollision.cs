@@ -28,12 +28,13 @@ public class BulletCollision : MonoBehaviour
         // khoi tao 1 web tai vi tri va cham
         if (taget.gameObject.tag == "fish")
         {
-            Destroy(this.gameObject);
+            
             web= (GameObject)Instantiate(srcweb, transform.position,transform.rotation);
             web.name = "web";
             web.transform.SetParent(WebZone, true);
             web.GetComponent<WebInfo>().firer = this.gameObject.GetComponent<BulletInfo>().firer;
             web.GetComponent<WebInfo>().rangePower = this.gameObject.GetComponent<BulletInfo>().rangePower;
+            Destroy(this.gameObject);
 
         }
     }
