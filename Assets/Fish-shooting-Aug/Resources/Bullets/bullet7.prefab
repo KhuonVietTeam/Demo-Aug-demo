@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e497e5ebe13cb468b12970ce3210db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obj: {fileID: 1596664857993822, guid: 2ab7833bc27c7604b9f7b998877b9483, type: 2}
+  srcweb: {fileID: 1596664857993822, guid: 2ab7833bc27c7604b9f7b998877b9483, type: 2}
   power: 1000
 --- !u!114 &114314242263164490
 MonoBehaviour:
@@ -103,6 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9963938794f76a43bf4a70d823e9519, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rangePower: 0
 --- !u!212 &212976077902153614
 SpriteRenderer:
   m_ObjectHideFlags: 1

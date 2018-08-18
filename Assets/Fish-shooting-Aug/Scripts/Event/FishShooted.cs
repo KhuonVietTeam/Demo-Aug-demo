@@ -32,6 +32,7 @@ public class FishShooted : MonoBehaviour {
             coin.name = "coin";
             coin.transform.SetParent(CoinZone, true);
             EventManager.fishbuyer.BuyFish(beKilledBy, fish);
+            
             Debug.Log("be killed by: "+beKilledBy.name);
             Debug.Log("Benefit: " + beKilledBy.WatchWallet());
 

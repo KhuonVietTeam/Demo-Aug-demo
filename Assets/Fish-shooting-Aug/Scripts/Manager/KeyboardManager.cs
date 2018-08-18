@@ -9,14 +9,14 @@ public class KeyboardManager : MonoBehaviour
     public GameObject[] srcBullets, srcCannons, srcWebs;
     private GameObject bullet, cannon1, cannon2, cannon3, cannon4;
     private Transform bulletZone;
-
+    
     // Use this for initialization
     void Awake()
     {
         srcBullets = Resources.LoadAll<GameObject>("Bullets");
         srcCannons = Resources.LoadAll<GameObject>("Cannons");
         srcWebs = Resources.LoadAll<GameObject>("Webs");
-
+        
 
 
     }
