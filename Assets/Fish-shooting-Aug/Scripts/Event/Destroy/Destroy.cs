@@ -16,7 +16,7 @@ public class Destroy: MonoBehaviour { //Pha huy ca theo toa do
         if (x > 35|| x < -35 || y > 25 || y < -25)
         {
             Destroy(this.gameObject);
-            Fishes.allFishCounter--;
+            FishManager.allFishCounter--;
         }
         
     }

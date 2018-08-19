@@ -8,6 +8,7 @@ public class FishShooted : MonoBehaviour {
     public int benefitValue;
     private GameObject srcCoin,coin;
     private Transform CoinZone;
+    public static int pointvalue;
     Fish fish;
     void Awake()
     {
@@ -32,9 +33,11 @@ public class FishShooted : MonoBehaviour {
             coin.name = "coin";
             coin.transform.SetParent(CoinZone, true);
             EventManager.fishbuyer.BuyFish(beKilledBy, fish);
-            
-            Debug.Log("be killed by: "+beKilledBy.name);
-            Debug.Log("Benefit: " + beKilledBy.WatchWallet());
+            FishManager.allFishCounter--;
+            pointvalue++;
+            //Debug.Log(pointvalue);
+            //Debug.Log("be killed by: "+beKilledBy.name);
+            //Debug.Log("Benefit: " + beKilledBy.WatchWallet());
 
         }
     }

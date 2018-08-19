@@ -15,8 +15,8 @@ public class SpecialMap : MonoBehaviour {
     float[] mang1 = new float[] { 0, 45, 90, 135, 180, -45, -90, -135};
     void Awake()
     {
-        fish = Resources.LoadAll<GameObject>("FishSpecial");
-        xFish = Resources.LoadAll<GameObject>("XFishSpecial");
+        fish = Resources.LoadAll<GameObject>("Fishes/SpecialStage1");
+        xFish = Resources.LoadAll<GameObject>("Fishes/XFishSpecial");
     }
     void Start () {
 		
@@ -36,7 +36,7 @@ public class SpecialMap : MonoBehaviour {
                 for (int a = 0; a < 8; a++)
                 {
                     allfish = (GameObject)Instantiate(fish[temp], new Vector3(0, 0, 0), Quaternion.Euler(new Vector3(0, 0, mang1[a] = mang1[a] - 10)));
-                    Fishes.allFishCounter++;
+                    FishManager.allFishCounter++;
                     counter++;
                     t = Time.time;
                     allfish.transform.SetParent(noiChua, false);
@@ -56,7 +56,7 @@ public class SpecialMap : MonoBehaviour {
                 for (int a = 0; a < 8; a++)
                 {
                     allfish = (GameObject)Instantiate(xFish[temp], new Vector3(0, 0, 0), Quaternion.Euler(new Vector3(0, 0, mang1[a])));
-                    Fishes.allFishCounter++;
+                    FishManager.allFishCounter++;
                     counter++;
                     t = Time.time;
                     allfish.transform.SetParent(noiChua, false);
