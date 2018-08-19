@@ -321,9 +321,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 94055173}
+  - component: {fileID: 94055174}
   m_Layer: 5
   m_Name: Spawn4
-  m_TagString: Untagged
+  m_TagString: CoinSpawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -341,6 +342,21 @@ Transform:
   m_Father: {fileID: 1089348084}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &94055174
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 94055172}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &105442108
 GameObject:
   m_ObjectHideFlags: 0
@@ -422,9 +438,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 130310892}
+  - component: {fileID: 130310893}
   m_Layer: 5
   m_Name: Spawn2
-  m_TagString: Untagged
+  m_TagString: CoinSpawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -442,6 +459,21 @@ Transform:
   m_Father: {fileID: 1089348084}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &130310893
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 130310891}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &191770131
 GameObject:
   m_ObjectHideFlags: 0
@@ -3110,9 +3142,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1668077089}
+  - component: {fileID: 1668077090}
   m_Layer: 5
   m_Name: Spawn3
-  m_TagString: Untagged
+  m_TagString: CoinSpawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3130,6 +3163,21 @@ Transform:
   m_Father: {fileID: 1089348084}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1668077090
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1668077088}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &1691080562
 GameObject:
   m_ObjectHideFlags: 0
@@ -3550,9 +3598,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1877322876}
+  - component: {fileID: 1877322877}
   m_Layer: 5
   m_Name: Spawn1
-  m_TagString: Untagged
+  m_TagString: CoinSpawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3570,6 +3619,21 @@ Transform:
   m_Father: {fileID: 1089348084}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1877322877
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1877322875}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!4 &1978509743 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4238383172177738, guid: ad182462c68840947a3b332b768e3120,

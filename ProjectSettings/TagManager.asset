@@ -9,6 +9,7 @@ TagManager:
   - Undefined
   - fish
   - Web
+  - CoinSpawn
   layers:
   - Default
   - TransparentFX
