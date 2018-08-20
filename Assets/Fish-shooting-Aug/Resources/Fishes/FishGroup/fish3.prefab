@@ -91,7 +91,7 @@ Animator:
   m_GameObject: {fileID: 1243009273215666}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4e91208e406b7394f95a1c5db7554b41, type: 2}
+  m_Controller: {fileID: 9100000, guid: d8e557b39fb387348be5873516236a0c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -111,7 +111,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd33f84024a418d47a824f5965f54d0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speedMin: 0
+  speedMax: 0
+  pos: {x: 0, y: 0, z: 0}
+  frameCounter: 0
+  isMove: 0
 --- !u!114 &114880953585784736
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -135,6 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bloodFish: 1
+  benefitValue: 0
 --- !u!212 &212723229201818244
 SpriteRenderer:
   m_ObjectHideFlags: 1

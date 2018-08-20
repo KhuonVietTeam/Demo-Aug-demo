@@ -53,25 +53,41 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Fish-shooting-Aug\Scripts\CaBatLuoi.cs" />
-     <Compile Include="Assets\Fish-shooting-Aug\Scripts\Destroy.cs" />
-     <Compile Include="Assets\Fish-shooting-Aug\Scripts\DestroyCoin.cs" />
-     <Compile Include="Assets\Fish-shooting-Aug\Scripts\DestroyFishGroup.cs" />
-     <Compile Include="Assets\Fish-shooting-Aug\Scripts\FishCatched.cs" />
-     <Compile Include="Assets\Fish-shooting-Aug\Scripts\Fishes.cs" />
-     <Compile Include="Assets\Fish-shooting-Aug\Scripts\FishGroup.cs" />
-     <Compile Include="Assets\Fish-shooting-Aug\Scripts\Gun.cs" />
-     <Compile Include="Assets\Fish-shooting-Aug\Scripts\Luoibatca.cs" />
-     <Compile Include="Assets\Fish-shooting-Aug\Scripts\Move.cs" />
-     <Compile Include="Assets\Fish-shooting-Aug\Scripts\MoveCircle.cs" />
-     <Compile Include="Assets\Fish-shooting-Aug\Scripts\MoveSin.cs" />
-     <Compile Include="Assets\Fish-shooting-Aug\Scripts\MoveSinGroup.cs" />
-     <Compile Include="Assets\Fish-shooting-Aug\Scripts\Point.cs" />
-     <Compile Include="Assets\Fish-shooting-Aug\Scripts\rapefire.cs" />
-     <Compile Include="Assets\Fish-shooting-Aug\Scripts\rotacanon.cs" />
-     <Compile Include="Assets\Fish-shooting-Aug\Scripts\SpecialMap.cs" />
-     <Compile Include="Assets\Fish-shooting-Aug\Scripts\Wallet.cs" />
-     <Compile Include="Assets\Fish-shooting-Aug\Scripts\webinstan.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\Demo\Demo.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\Event\BulletCollision.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\Event\Destroy\Destroy.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\Event\Destroy\DestroyCoin.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\Event\Destroy\DestroyFishGroup.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\Event\Destroy\DestroyWeb.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\Event\FishShooted.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\Event\Instance\Fishes.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\Event\Instance\FishGroup.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\Event\rotacanon.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\InfoGameObject\BulletInfo.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\InfoGameObject\CoinInfo.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\InfoGameObject\FishInfo.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\InfoGameObject\WebInfo.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\Manager\EventManager.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\Manager\KeyboardManager.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\Manager\PlayerManager.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\Moverment\Move.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\Moverment\MoveCircle.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\Moverment\MoveSin.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\Moverment\MoveSinGroup.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\OOP\Bullet.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\OOP\BulletSeller.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\OOP\CoinBuyer.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\OOP\CoinSeller.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\OOP\Fish.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\OOP\FishBuyer.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\OOP\Player.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\OOP\Wallet.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\TempsScripts\CaBatLuoi.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\TempsScripts\FishCatched.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\TempsScripts\Gun.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\TempsScripts\Luoibatca.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\TempsScripts\Point.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\TempsScripts\SpecialMap.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>E:/Unitygit/Demo-Aug-demo/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
