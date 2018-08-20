@@ -31,7 +31,7 @@ public class FishShooted : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (bloodFish == 0)
+        if (bloodFish <= 0)
         {
             Destroy(this.gameObject);  //destroy this fish
             coin = Instantiate(srcCoin, transform.position, transform.rotation) as GameObject;
@@ -55,7 +55,7 @@ public class FishShooted : MonoBehaviour
             {
                 //máu của cá -= sát thương của Web
                 bloodFish -= collision.gameObject.GetComponent<WebInfo>().rangePower;
-                if (bloodFish == 0) //nếu cá bị kết liễu
+                if (bloodFish <= 0) //nếu cá bị kết liễu
                 {
                     beKilledBy = collision.gameObject.GetComponent<WebInfo>().firer;
                 }

@@ -6,17 +6,15 @@ public class KeyboardManager : MonoBehaviour
 {
     private Bullet bullet1, bullet2; //note
 
-    public GameObject[] srcBullets, srcCannons, srcWebs;
-    private GameObject bullet, cannon1, cannon2, cannon3, cannon4;
-    private Transform bulletZone;
-    
+    //public GameObject[] srcBullets, srcWebs;
+    //BulletManager bulletmanager;
+
     // Use this for initialization
     void Awake()
     {
-        srcBullets = Resources.LoadAll<GameObject>("Bullets");
-        srcCannons = Resources.LoadAll<GameObject>("Cannons");
-        srcWebs = Resources.LoadAll<GameObject>("Webs");
-        
+        //srcWebs = Resources.LoadAll<GameObject>("Webs");
+        //bulletmanager = new BulletManager();
+
 
 
     }
@@ -24,11 +22,8 @@ public class KeyboardManager : MonoBehaviour
     {
 
 
-        cannon1 = GameObject.Find("/CannonObject/baseCannon1/cannon");
-        cannon2 = GameObject.Find("/CannonObject/baseCannon2/cannon");
-        cannon3 = GameObject.Find("/CannonObject/baseCannon3/cannon");
-        cannon4 = GameObject.Find("/CannonObject/baseCannon4/cannon");
-        bulletZone = transform.Find("/CannonObject/bulletZone");
+
+        //bulletZone = transform.Find("/CannonObject/bulletZone");
 
     }
 
@@ -36,8 +31,24 @@ public class KeyboardManager : MonoBehaviour
     void Update()
     {
 
-        GetKeyToShoot();
-        GetKeyToRotate();
+        //GetKeyToShoot();
+
+        CannonManager.GetKeyToControl(0, KeyCode.Q, KeyCode.W);
+        CannonManager.GetKeyToControl(1, KeyCode.E, KeyCode.R);
+        CannonManager.GetKeyToControl(2, KeyCode.T, KeyCode.Y);
+        CannonManager.GetKeyToControl(3, KeyCode.U, KeyCode.I);
+
+
+        BulletManager.GetKeyToChangeBullet(PlayerManager.player1, KeyCode.A, KeyCode.S);
+        BulletManager.GetKeyToChangeBullet(PlayerManager.player2, KeyCode.D, KeyCode.F);
+        BulletManager.GetKeyToChangeBullet(PlayerManager.player3, KeyCode.G, KeyCode.H);
+        BulletManager.GetKeyToChangeBullet(PlayerManager.player4, KeyCode.J, KeyCode.K);
+
+        BulletManager.GetKeyToShoot(0, PlayerManager.player1, KeyCode.Alpha1);
+        BulletManager.GetKeyToShoot(1, PlayerManager.player2, KeyCode.Alpha2);
+        BulletManager.GetKeyToShoot(2, PlayerManager.player3, KeyCode.Alpha3);
+        BulletManager.GetKeyToShoot(3, PlayerManager.player4, KeyCode.Alpha4);
+
 
 
     }
@@ -46,45 +57,43 @@ public class KeyboardManager : MonoBehaviour
         //nguoi choi 1
         if (Input.GetKey(KeyCode.Q))
         {
-            cannon1.transform.localRotation = Quaternion.Euler(cannon1.transform.rotation.x, cannon1.transform.rotation.y, Mathf.Clamp(cannon1.transform.localRotation.eulerAngles.z + 2, 10, 170));
 
         }
         else if (Input.GetKey(KeyCode.W))
         {
-            cannon1.transform.localRotation = Quaternion.Euler(cannon1.transform.rotation.x, cannon1.transform.rotation.y, Mathf.Clamp(cannon1.transform.localRotation.eulerAngles.z - 2, 10, 170));
         }
 
         //nguoi choi 2
         if (Input.GetKey(KeyCode.E))
         {
-            cannon2.transform.localRotation = Quaternion.Euler(cannon2.transform.rotation.x, cannon2.transform.rotation.y, Mathf.Clamp(cannon2.transform.localRotation.eulerAngles.z + 2, 10, 170));
+            //cannon2.transform.localRotation = Quaternion.Euler(cannon2.transform.rotation.x, cannon2.transform.rotation.y, Mathf.Clamp(cannon2.transform.localRotation.eulerAngles.z + 2, 10, 170));
 
         }
         else if (Input.GetKey(KeyCode.R))
         {
-            cannon2.transform.localRotation = Quaternion.Euler(cannon2.transform.rotation.x, cannon2.transform.rotation.y, Mathf.Clamp(cannon2.transform.localRotation.eulerAngles.z - 2, 10, 170));
+            //cannon2.transform.localRotation = Quaternion.Euler(cannon2.transform.rotation.x, cannon2.transform.rotation.y, Mathf.Clamp(cannon2.transform.localRotation.eulerAngles.z - 2, 10, 170));
         }
 
         //nguoi choi 3
         if (Input.GetKey(KeyCode.T))
         {
-            cannon3.transform.localRotation = Quaternion.Euler(cannon3.transform.rotation.x, cannon3.transform.rotation.y, Mathf.Clamp(cannon3.transform.localRotation.eulerAngles.z + 2, 10, 170));
+            //cannon3.transform.localRotation = Quaternion.Euler(cannon3.transform.rotation.x, cannon3.transform.rotation.y, Mathf.Clamp(cannon3.transform.localRotation.eulerAngles.z + 2, 10, 170));
 
         }
         else if (Input.GetKey(KeyCode.Y))
         {
-            cannon3.transform.localRotation = Quaternion.Euler(cannon3.transform.rotation.x, cannon3.transform.rotation.y, Mathf.Clamp(cannon3.transform.localRotation.eulerAngles.z - 2, 10, 170));
+            //cannon3.transform.localRotation = Quaternion.Euler(cannon3.transform.rotation.x, cannon3.transform.rotation.y, Mathf.Clamp(cannon3.transform.localRotation.eulerAngles.z - 2, 10, 170));
         }
 
         //nguoi choi 4
         if (Input.GetKey(KeyCode.U))
         {
-            cannon4.transform.localRotation = Quaternion.Euler(cannon4.transform.rotation.x, cannon4.transform.rotation.y, Mathf.Clamp(cannon4.transform.localRotation.eulerAngles.z + 2, 10, 170));
+            //cannon4.transform.localRotation = Quaternion.Euler(cannon4.transform.rotation.x, cannon4.transform.rotation.y, Mathf.Clamp(cannon4.transform.localRotation.eulerAngles.z + 2, 10, 170));
 
         }
         else if (Input.GetKey(KeyCode.I))
         {
-            cannon4.transform.localRotation = Quaternion.Euler(cannon4.transform.rotation.x, cannon4.transform.rotation.y, Mathf.Clamp(cannon4.transform.localRotation.eulerAngles.z - 2, 10, 170));
+            //cannon4.transform.localRotation = Quaternion.Euler(cannon4.transform.rotation.x, cannon4.transform.rotation.y, Mathf.Clamp(cannon4.transform.localRotation.eulerAngles.z - 2, 10, 170));
         }
     }
     void GetKeyToShoot()
@@ -92,25 +101,7 @@ public class KeyboardManager : MonoBehaviour
         //nguoi choi 1 Bắn
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            if (PlayerManager.player1.WatchWallet() > 0)
-            {
-                bullet = (GameObject)Instantiate(srcBullets[0], cannon1.transform.position, cannon1.transform.rotation);
-                bullet.name = "bullet" + 1;
-                bullet.transform.SetParent(bulletZone, true);
 
-                bullet.GetComponent<BulletInfo>().firer = PlayerManager.player1; //fill .firer to who is shooted
-                bullet.GetComponent<BulletInfo>().rangePower = PlayerManager.player1.WatchBullet(); //fill .rangePower to how many range of power
-
-                EventManager.bulletseller.SellBullet(PlayerManager.player1);
-
-                Debug.Log("player 1: " + PlayerManager.player1.WatchWallet());
-
-            }
-            else
-            {
-                Debug.Log("player 1: Gameover");
-
-            }
 
 
         }
@@ -120,12 +111,12 @@ public class KeyboardManager : MonoBehaviour
 
             if (PlayerManager.player2.WatchWallet() > 0)
             {
-                bullet = (GameObject)Instantiate(srcBullets[0], cannon2.transform.position, cannon2.transform.rotation);
-                bullet.name = "bullet" + 2;
-                bullet.transform.SetParent(bulletZone, true);
+                //bullet = (GameObject)Instantiate(srcBullets[0], cannon2.transform.position, cannon2.transform.rotation);
+                //bullet.name = "bullet" + 2;
+                //bullet.transform.SetParent(bulletZone, true);
 
-                bullet.GetComponent<BulletInfo>().firer = PlayerManager.player2; //fill .firer to who is shooted
-                bullet.GetComponent<BulletInfo>().rangePower = PlayerManager.player2.WatchBullet(); //fill .rangePower to how many range of power
+                //bullet.GetComponent<BulletInfo>().firer = PlayerManager.player2; //fill .firer to who is shooted
+                //bullet.GetComponent<BulletInfo>().rangePower = PlayerManager.player2.WatchBullet(); //fill .rangePower to how many range of power
 
                 EventManager.bulletseller.SellBullet(PlayerManager.player2);
 
@@ -144,12 +135,12 @@ public class KeyboardManager : MonoBehaviour
         {
             if (PlayerManager.player3.WatchWallet() > 0)
             {
-                bullet = (GameObject)Instantiate(srcBullets[0], cannon3.transform.position, cannon3.transform.rotation);
-                bullet.name = "bullet" + 3;
-                bullet.transform.SetParent(bulletZone, true);
+                //bullet = (GameObject)Instantiate(srcBullets[0], cannon3.transform.position, cannon3.transform.rotation);
+                //bullet.name = "bullet" + 3;
+                //bullet.transform.SetParent(bulletZone, true);
 
-                bullet.GetComponent<BulletInfo>().firer = PlayerManager.player3; //fill .firer to who is shooted
-                bullet.GetComponent<BulletInfo>().rangePower = PlayerManager.player3.WatchBullet(); //fill .rangePower to how many range of power
+                //bullet.GetComponent<BulletInfo>().firer = PlayerManager.player3; //fill .firer to who is shooted
+                //bullet.GetComponent<BulletInfo>().rangePower = PlayerManager.player3.WatchBullet(); //fill .rangePower to how many range of power
 
                 EventManager.bulletseller.SellBullet(PlayerManager.player3);
 
@@ -169,12 +160,12 @@ public class KeyboardManager : MonoBehaviour
 
             if (PlayerManager.player4.WatchWallet() > 0)
             {
-                bullet = (GameObject)Instantiate(srcBullets[0], cannon4.transform.position, cannon4.transform.rotation);
-                bullet.name = "bullet" + 4;
-                bullet.transform.SetParent(bulletZone, true);
+                //bullet = (GameObject)Instantiate(srcBullets[0], cannon4.transform.position, cannon4.transform.rotation);
+                //bullet.name = "bullet" + 4;
+                //bullet.transform.SetParent(bulletZone, true);
 
-                bullet.GetComponent<BulletInfo>().firer = PlayerManager.player4; //fill .firer to who is shooted
-                bullet.GetComponent<BulletInfo>().rangePower = PlayerManager.player4.WatchBullet(); //fill .rangePower to how many range of power
+                //bullet.GetComponent<BulletInfo>().firer = PlayerManager.player4; //fill .firer to who is shooted
+                //bullet.GetComponent<BulletInfo>().rangePower = PlayerManager.player4.WatchBullet(); //fill .rangePower to how many range of power
 
                 EventManager.bulletseller.SellBullet(PlayerManager.player4);
 

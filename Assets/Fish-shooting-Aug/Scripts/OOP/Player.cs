@@ -24,15 +24,32 @@ public class Player
     //public Wallet wallet = new Wallet();
     private Wallet wallet;
     private Bullet bullet;
+
     public int WatchBullet()
     {
         return bullet.Value;
     }
+
     public int WatchWallet()
     {
 
         return wallet.Value;
     }
+
+    public void AddBulletValue(int Value)
+    {
+        bullet.AddValue(Value);
+    }
+
+    public void SubBulletValue(int Value)
+    {
+        if(bullet.Value >= Value)
+        {
+            bullet.SubValue(Value);
+
+        }
+    }
+
     public int PayAmount(int amountToPay)
     {
         if (wallet.Value >= amountToPay)
@@ -42,11 +59,13 @@ public class Player
         }
         return 0;
     }
+
     public void GetAmount(int amountToGet)
     {
         wallet.AddMoney(amountToGet);
 
     }
+
     public void Info()
     {
         Debug.Log("Name: " + name);

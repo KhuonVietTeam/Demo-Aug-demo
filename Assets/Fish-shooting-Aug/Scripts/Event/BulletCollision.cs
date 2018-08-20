@@ -8,7 +8,7 @@ public class BulletCollision : MonoBehaviour
     int counter = 0; //tranh viec bullet vao point-to-shot Zone thi bi can ban luc o hang code addforce
     public GameObject srcweb;
     private GameObject web;
-    public float power = 1000f;
+    public float speed = 1000f;
     private Transform WebZone;
 
     private void Start()
@@ -22,7 +22,7 @@ public class BulletCollision : MonoBehaviour
         if (taget.gameObject.tag == "FirePoint" && counter == 0)
         {
             counter++;
-            GetComponent<Rigidbody2D>().AddForce(transform.up * power);
+            GetComponent<Rigidbody2D>().AddForce(transform.up * speed);
         }
         // khi vien dan cham vao ca
         // khoi tao 1 web tai vi tri va cham

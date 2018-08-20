@@ -8,11 +8,25 @@ public class PlayerManager : MonoBehaviour {
     private void Awake()
     {
         
-        player1 = new Player("player1", 0, 1);
-        player2 = new Player("player2", 0, 1);
-        player3 = new Player("player3", 0, 1);
-        player4 = new Player("player4", 0, 1);
+        player1 = new Player("player1", 0, 0);
+        player2 = new Player("player2", 0, 0);
+        player3 = new Player("player3", 0, 0);
+        player4 = new Player("player4", 0, 0);
     }
-    
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha0))
+        {
+            Demo();
+        }
+    }
+    private void Demo()
+    {
+
+        player1 = new Player("player1", 100, 0);
+        player2 = new Player("player2", 100, 0);
+        player3 = new Player("player3", 100, 0);
+        player4 = new Player("player4", 100, 0);
+    }
 
 }
