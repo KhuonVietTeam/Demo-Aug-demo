@@ -64,6 +64,7 @@
      <Compile Include="Assets\Fish-shooting-Aug\Scripts\Event\Instance\Fishes.cs" />
      <Compile Include="Assets\Fish-shooting-Aug\Scripts\Event\Instance\FishGroup.cs" />
      <Compile Include="Assets\Fish-shooting-Aug\Scripts\Event\rotacanon.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\Event\SpecialMap\SpecialMap1.cs" />
      <Compile Include="Assets\Fish-shooting-Aug\Scripts\InfoGameObject\BulletInfo.cs" />
      <Compile Include="Assets\Fish-shooting-Aug\Scripts\InfoGameObject\WebInfo.cs" />
      <Compile Include="Assets\Fish-shooting-Aug\Scripts\Manager\EventManager.cs" />

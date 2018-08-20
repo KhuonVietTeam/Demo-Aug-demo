@@ -21,7 +21,6 @@ public class DestroyFishGroup : MonoBehaviour
         {
             Destroy(this.gameObject);
             FishManager.allFishCounter--;
-            FishGroup.counter--;
         }
 
     }

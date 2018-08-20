@@ -21,11 +21,11 @@ GameObject:
   - component: {fileID: 4828494213920376}
   - component: {fileID: 212922300944069110}
   - component: {fileID: 95450982649595370}
-  - component: {fileID: 114339709359058864}
   - component: {fileID: 114681548144690328}
   - component: {fileID: 60276571053932610}
-  - component: {fileID: 114635222760794336}
   - component: {fileID: 114930101587996066}
+  - component: {fileID: 114003764229239670}
+  - component: {fileID: 114465351470804710}
   m_Layer: 0
   m_Name: fish4
   m_TagString: fish
@@ -100,7 +100,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114339709359058864
+--- !u!114 &114003764229239670
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e58a76e974fce1c47b326098339298d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114635222760794336
+--- !u!114 &114465351470804710
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,6 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bloodFish: 1
+  benefitValue: 0
 --- !u!212 &212922300944069110
 SpriteRenderer:
   m_ObjectHideFlags: 1
