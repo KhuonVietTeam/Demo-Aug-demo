@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Move : MonoBehaviour {
+public class Move : MonoBehaviour
+{
     public float speedMin;
     public float speedMax;
     private float speed;
@@ -10,14 +11,16 @@ public class Move : MonoBehaviour {
     public float frameCounter;
     public bool isMove;
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         isMove = true;
         speed = 2f;
 
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
         if (isMove)
         {
             if (this.gameObject.name == "fish1" | this.gameObject.name == "fish2")

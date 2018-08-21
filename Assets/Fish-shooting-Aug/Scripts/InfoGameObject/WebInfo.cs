@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WebInfo : MonoBehaviour {
     public Player firer;
-    public int rangePower = 0;
+    public int rangePower = 1;
     // Use this for initialization
     void Start () {
 		
