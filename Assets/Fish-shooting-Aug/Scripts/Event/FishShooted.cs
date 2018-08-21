@@ -9,7 +9,6 @@ public class FishShooted : MonoBehaviour
     public int benefitValue;
     private GameObject srcCoin, coin;
     private Transform CoinZone;
-
     Fish fish;
     Animator ani;
     void Awake()
@@ -31,24 +30,7 @@ public class FishShooted : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-
     {
-        if (bloodFish <= 0)
-        {
-            Destroy(this.gameObject);  //destroy this fish
-            coin = Instantiate(srcCoin, transform.position, transform.rotation) as GameObject;
-            coin.name = "coin";
-            coin.transform.SetParent(CoinZone, true);
-            coin.gameObject.GetComponent<CoinInfo>().firer =beKilledBy;
-            EventManager.fishbuyer.BuyFish(beKilledBy, fish);
-
-            FishManager.allFishCounter--;
-   
-
-
-        }
-
-           
 
     }
 
@@ -57,18 +39,18 @@ public class FishShooted : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Web"))
         {
-            Debug.Log("ca cham luoi");
             if (Random.Range(0, 2) < 1)
             {
                 //máu của cá -= sát thương của Web
                 bloodFish -= collision.gameObject.GetComponent<WebInfo>().rangePower;
-                if (bloodFish <= 0) //nếu cá bị kết liễu
+                Debug.Log(bloodFish);
+                if (bloodFish < 0) //nếu cá bị kết liễu
                 {
                     try
                     {
                         this.gameObject.GetComponent<Move>().isMove = false;
                     }
-                    catch (System.Exception){ Debug.Log("deo sao day"); }
+                    catch (System.Exception) { Debug.Log("deo sao day"); }
                     try
                     {
                         this.gameObject.GetComponent<MoveSinGroup>().isMove = false;
