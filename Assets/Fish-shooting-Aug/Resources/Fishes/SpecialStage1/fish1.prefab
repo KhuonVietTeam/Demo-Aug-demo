@@ -22,9 +22,9 @@ GameObject:
   - component: {fileID: 212968262186101788}
   - component: {fileID: 95537672565834298}
   - component: {fileID: 60865703676160212}
-  - component: {fileID: 114510093348763178}
   - component: {fileID: 114079471383790610}
   - component: {fileID: 114867177568499250}
+  - component: {fileID: 114541496480160874}
   m_Layer: 0
   m_Name: fish1
   m_TagString: fish
@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
---- !u!114 &114510093348763178
+--- !u!114 &114541496480160874
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,6 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bloodFish: 1
+  benefitValue: 0
 --- !u!212 &212968262186101788
 SpriteRenderer:
   m_ObjectHideFlags: 1

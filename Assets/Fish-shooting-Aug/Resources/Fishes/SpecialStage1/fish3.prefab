@@ -23,8 +23,8 @@ GameObject:
   - component: {fileID: 95847086517900522}
   - component: {fileID: 60283478851326904}
   - component: {fileID: 114515489046156234}
-  - component: {fileID: 114064063720076402}
   - component: {fileID: 114034276892077356}
+  - component: {fileID: 114329525368741644}
   m_Layer: 0
   m_Name: fish3
   m_TagString: fish
@@ -112,7 +112,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bloodFish: 1
---- !u!114 &114064063720076402
+  benefitValue: 0
+--- !u!114 &114329525368741644
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}

@@ -10,7 +10,7 @@ public class Fishes: MonoBehaviour
     private int chon = 11, sodem;
     private float WBoard = 1300/2 ;
     private float HBoard = 2200/2 ;
-    public static int allFishCounter;
+    //public static int allFishCounter;
     GameObject allfish;
     void Awake()
     {
@@ -25,7 +25,7 @@ public class Fishes: MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (allFishCounter < soLuong)
+        if (FishManager.allFishCounter < soLuong)
         {
             Vector2 pos = new Vector2(0, 0);
             float rt = 0;
@@ -60,7 +60,7 @@ public class Fishes: MonoBehaviour
             }
 
             allfish = (GameObject)Instantiate(srcfish[chon], pos, Quaternion.Euler(new Vector3(0, 0, rt)));
-            allFishCounter++;
+            FishManager.allFishCounter++;
             allfish.name = "cacung"+ chon;
             if(chon == 8 || chon == 9 || chon == 10)
             {

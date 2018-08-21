@@ -10,6 +10,7 @@ public class FishShooted : MonoBehaviour
     public int benefitValue;
     private GameObject srcCoin, coin;
     private Transform CoinZone;
+
     Fish fish;
     void Awake()
     {
@@ -40,8 +41,9 @@ public class FishShooted : MonoBehaviour
             coin.gameObject.GetComponent<CoinInfo>().firer =beKilledBy;
             EventManager.fishbuyer.BuyFish(beKilledBy, fish);
 
-            Debug.Log("be killed by: " + beKilledBy.name);
-            Debug.Log("Benefit: " + beKilledBy.WatchWallet());
+            FishManager.allFishCounter--;
+   
+
 
         }
     }

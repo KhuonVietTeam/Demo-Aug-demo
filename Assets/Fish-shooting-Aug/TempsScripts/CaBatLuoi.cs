@@ -36,11 +36,8 @@ public class CaBatLuoi : MonoBehaviour {
                 //txtpoint.addcscore(5);
                 //newCoin = (GameObject)Instantiate(allCoin, transform.position, transform.rotation);
                 newCoin = Instantiate(allCoin, transform.position, transform.rotation) as GameObject;
-                
                 Destroy(this.gameObject);  //xoa ca'
-                Fishes.allFishCounter--;
-                FishGroup.counter--;
-                SpecialMap.counter--;
+                FishManager.allFishCounter--;
                 point++;
                 //Debug.Log("Chet");
             }

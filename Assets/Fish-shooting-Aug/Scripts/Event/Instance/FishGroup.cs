@@ -28,19 +28,19 @@ public class FishGroup : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (counter < soLuong)
+        if (FishManager.allFishCounter < soLuong)
         {
             float rt = 0;
             float vl = Random.Range(0, 100);
             if (vl < 50)
             {
-                chon = 0;
+                chon = Random.Range(0,2);
             }
             else if (50 <= vl && vl < 90)
             {
-                chon = 1;
+                chon = 2;
             }
-            else chon = 2;
+            else chon = 3;
             switch (Random.Range(1, 5))
             {
                 case 1://Tren
@@ -50,8 +50,7 @@ public class FishGroup : MonoBehaviour
                     for (int a = 0; a <= b; a++)
                     {
                         allfish = (GameObject)Instantiate(srcfish[chon], new Vector3(vec + mang1[a], WBoard + mang2[a], 0), Quaternion.Euler(new Vector3(0, 0, rt)));
-                        Fishes.allFishCounter++;
-                        counter++;
+                        FishManager.allFishCounter++;
                         allfish.name = "FishGroup" + chon;
                         allfish.transform.SetParent(noiChua, false);
                     }
@@ -63,8 +62,7 @@ public class FishGroup : MonoBehaviour
                     for (int a = 0; a < b; a++)
                     {
                         allfish = (GameObject)Instantiate(srcfish[chon], new Vector3(vec + mang1[a], -WBoard + mang2[a], 0), Quaternion.Euler(new Vector3(0, 0, rt)));
-                        Fishes.allFishCounter++;
-                        counter++;
+                        FishManager.allFishCounter++;
                         allfish.name = "FishGroup" + chon;
                         allfish.transform.SetParent(noiChua, false);
                     }
@@ -76,8 +74,7 @@ public class FishGroup : MonoBehaviour
                     for (int a = 0; a < b; a++)
                     {
                         allfish = (GameObject)Instantiate(srcfish[chon], new Vector3(HBoard + mang1[a], vec + mang2[a], 0), Quaternion.Euler(new Vector3(0, 0, rt)));
-                        Fishes.allFishCounter++;
-                        counter++;
+                        FishManager.allFishCounter++;
                         allfish.name = "FishGroup" + chon;
                         allfish.transform.SetParent(noiChua, false);
                     }
@@ -89,8 +86,7 @@ public class FishGroup : MonoBehaviour
                     for (int a = 0; a < b; a++)
                     {
                         allfish = (GameObject)Instantiate(srcfish[chon], new Vector3(HBoard + mang1[a], vec + mang2[a], 0), Quaternion.Euler(new Vector3(0, 0, rt)));
-                        Fishes.allFishCounter++;
-                        counter++;
+                        FishManager.allFishCounter++;
                         allfish.name = "FishGroup" + chon;
                         allfish.transform.SetParent(noiChua, false);
                     }

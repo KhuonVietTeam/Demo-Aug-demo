@@ -37,6 +37,7 @@ public class BulletManager:MonoBehaviour  {
     {
         if (Input.GetKeyDown(ShootKey))
         {
+
             if (player.WatchBullet() > 0)
             {
                 bullet = (GameObject)Instantiate(srcBullets[0], CannonManager.cannon[orderPlayer].transform.position, CannonManager.cannon[orderPlayer].transform.rotation);
@@ -45,7 +46,7 @@ public class BulletManager:MonoBehaviour  {
                 bullet.GetComponent<BulletInfo>().firer = player; //fill .firer to who is shooted
                 bullet.GetComponent<BulletInfo>().rangePower = player.WatchBullet(); //fill .rangePower to how many range of power
                 EventManager.bulletseller.SellBullet(player); //tru tien
-                Debug.Log("player 1: " +player.WatchWallet());
+                //Debug.Log("player 1: " +player.WatchWallet());
             }
 
         }

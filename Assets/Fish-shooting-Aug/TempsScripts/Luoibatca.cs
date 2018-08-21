@@ -16,7 +16,7 @@ public class Luoibatca : MonoBehaviour {
                 {
                     //txtpoint.addcscore(5);
                     Destroy(this.gameObject);
-                    Fishes.allFishCounter--;
+                    FishManager.allFishCounter--;
                     Debug.Log("Chet");
             }
             }
