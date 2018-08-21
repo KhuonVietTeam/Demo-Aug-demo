@@ -59,16 +59,27 @@
      <Compile Include="Assets\Fish-shooting-Aug\Scripts\Event\Destroy\DestroyCoin.cs" />
      <Compile Include="Assets\Fish-shooting-Aug\Scripts\Event\Destroy\DestroyFishGroup.cs" />
      <Compile Include="Assets\Fish-shooting-Aug\Scripts\Event\Destroy\DestroyWeb.cs" />
+<<<<<<< HEAD
      <Compile Include="Assets\Fish-shooting-Aug\Scripts\Event\EventMap.cs" />
+=======
+>>>>>>> e276e91569a7f81dea58b543c635bd776996d772
      <Compile Include="Assets\Fish-shooting-Aug\Scripts\Event\FishShooted.cs" />
      <Compile Include="Assets\Fish-shooting-Aug\Scripts\Event\Instance\Fishes.cs" />
      <Compile Include="Assets\Fish-shooting-Aug\Scripts\Event\Instance\FishGroup.cs" />
      <Compile Include="Assets\Fish-shooting-Aug\Scripts\Event\rotacanon.cs" />
+<<<<<<< HEAD
      <Compile Include="Assets\Fish-shooting-Aug\Scripts\Event\SpecialMap\SpecialMap1.cs" />
      <Compile Include="Assets\Fish-shooting-Aug\Scripts\InfoGameObject\BulletInfo.cs" />
      <Compile Include="Assets\Fish-shooting-Aug\Scripts\InfoGameObject\WebInfo.cs" />
      <Compile Include="Assets\Fish-shooting-Aug\Scripts\Manager\EventManager.cs" />
      <Compile Include="Assets\Fish-shooting-Aug\Scripts\Manager\FishManager.cs" />
+=======
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\InfoGameObject\BulletInfo.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\InfoGameObject\CoinInfo.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\InfoGameObject\FishInfo.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\InfoGameObject\WebInfo.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\Manager\EventManager.cs" />
+>>>>>>> e276e91569a7f81dea58b543c635bd776996d772
      <Compile Include="Assets\Fish-shooting-Aug\Scripts\Manager\KeyboardManager.cs" />
      <Compile Include="Assets\Fish-shooting-Aug\Scripts\Manager\PlayerManager.cs" />
      <Compile Include="Assets\Fish-shooting-Aug\Scripts\Moverment\Move.cs" />

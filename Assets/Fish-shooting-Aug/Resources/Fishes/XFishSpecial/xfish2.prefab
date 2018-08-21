@@ -108,7 +108,7 @@ Animator:
   m_GameObject: {fileID: 1840640917587136}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d4d3c94a90dc80b49a45b7c441e2c4f6, type: 2}
+  m_Controller: {fileID: 9100000, guid: 53f9bbccc29117e42b7199aab35a575e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -153,6 +153,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e58a76e974fce1c47b326098339298d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
+=======
+  speedMin: 0
+  speedMax: 0
+  pos: {x: 0, y: 0, z: 0}
+  frameCounter: 0
+  isMove: 0
+>>>>>>> e276e91569a7f81dea58b543c635bd776996d772
 --- !u!212 &212029476212508376
 SpriteRenderer:
   m_ObjectHideFlags: 1

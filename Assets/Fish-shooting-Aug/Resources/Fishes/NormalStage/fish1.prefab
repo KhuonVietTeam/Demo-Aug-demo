@@ -21,10 +21,10 @@ GameObject:
   - component: {fileID: 4146524099809980}
   - component: {fileID: 212672589409683656}
   - component: {fileID: 95101313517317916}
-  - component: {fileID: 114979126802067858}
   - component: {fileID: 60098666788730828}
   - component: {fileID: 114508432060174810}
   - component: {fileID: 114223856276700638}
+  - component: {fileID: 114459100346162164}
   m_Layer: 0
   m_Name: fish1
   m_TagString: fish
@@ -87,7 +87,7 @@ Animator:
   m_GameObject: {fileID: 1420080244071496}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 68efc288109dfe14391dfcb6df210af4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 354c97b6b00acf4469e1425b7c843cba, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -107,6 +107,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e58a76e974fce1c47b326098339298d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114459100346162164
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1420080244071496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd33f84024a418d47a824f5965f54d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedMin: 2
+  speedMax: 8
+  pos: {x: 0, y: 0, z: 0}
+  frameCounter: 0
+  isMove: 0
 --- !u!114 &114508432060174810
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -120,21 +136,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bloodFish: 1
   benefitValue: 0
---- !u!114 &114979126802067858
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1420080244071496}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89f39cd5e01804743b3426bb36a17c49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedMin: 6
-  speedMax: 8
-  pos: {x: 0, y: 0, z: 0}
-  frameCounter: 0
 --- !u!212 &212672589409683656
 SpriteRenderer:
   m_ObjectHideFlags: 1
