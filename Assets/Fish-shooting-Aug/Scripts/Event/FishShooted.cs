@@ -31,7 +31,7 @@ public class FishShooted : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-<<<<<<< HEAD
+
     {
         if (bloodFish <= 0)
         {
@@ -47,10 +47,9 @@ public class FishShooted : MonoBehaviour
 
 
         }
-=======
-    {       
 
->>>>>>> e276e91569a7f81dea58b543c635bd776996d772
+           
+
     }
 
     //Fishes catched by Web
