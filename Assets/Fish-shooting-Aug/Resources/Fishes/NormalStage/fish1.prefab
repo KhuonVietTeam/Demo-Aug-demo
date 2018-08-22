@@ -21,13 +21,13 @@ GameObject:
   - component: {fileID: 4146524099809980}
   - component: {fileID: 212672589409683656}
   - component: {fileID: 95101313517317916}
-  - component: {fileID: 114979126802067858}
   - component: {fileID: 60098666788730828}
   - component: {fileID: 114508432060174810}
   - component: {fileID: 114223856276700638}
+  - component: {fileID: 114623550614332908}
   m_Layer: 0
   m_Name: fish1
-  m_TagString: Undefined
+  m_TagString: fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119,7 +119,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bloodFish: 1
---- !u!114 &114979126802067858
+  benefitValue: 0
+--- !u!114 &114623550614332908
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,11 +128,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1420080244071496}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89f39cd5e01804743b3426bb36a17c49, type: 3}
+  m_Script: {fileID: 11500000, guid: cd33f84024a418d47a824f5965f54d0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedMin: 6
-  speedMax: 8
+  speedMin: 5
+  speedMax: 10
   pos: {x: 0, y: 0, z: 0}
   frameCounter: 0
 --- !u!212 &212672589409683656

@@ -12,6 +12,6 @@ public class FishManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update()
     {
-        Debug.Log(allFishCounter);
+        //Debug.Log(allFishCounter);
     }
 }

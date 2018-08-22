@@ -110,7 +110,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd33f84024a418d47a824f5965f54d0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speedMin: 5
+  speedMax: 10
+  pos: {x: 0, y: 0, z: 0}
+  frameCounter: 0
 --- !u!114 &114629224406044826
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -134,6 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bloodFish: 1
+  benefitValue: 0
 --- !u!212 &212359232542037890
 SpriteRenderer:
   m_ObjectHideFlags: 1

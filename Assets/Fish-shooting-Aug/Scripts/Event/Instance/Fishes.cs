@@ -62,15 +62,6 @@ public class Fishes: MonoBehaviour
             allfish = (GameObject)Instantiate(srcfish[chon], pos, Quaternion.Euler(new Vector3(0, 0, rt)));
             FishManager.allFishCounter++;
             allfish.name = "cacung"+ chon;
-            if(chon == 8 || chon == 9 || chon == 10)
-            {
-                sodem++;
-                if(sodem > 6)
-                {
-                   // Destroy(srcfish[chon].gameObject);
-                }
-            }
-            //Debug.Log(allFishCounter);
             allfish.transform.SetParent(noiChua, false);
         }
 
