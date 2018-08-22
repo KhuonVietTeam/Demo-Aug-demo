@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Fish-shooting-Aug/Scenes/Nhan - Copy.unity
+- path: Assets/Fish-shooting-Aug/Scenes/vuong.unity
   isLoaded: 1
   isActive: 1
