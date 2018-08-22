@@ -24,7 +24,11 @@ GameObject:
   - component: {fileID: 60707636425926946}
   - component: {fileID: 114556961012341302}
   - component: {fileID: 114362723220414178}
+<<<<<<< HEAD
   - component: {fileID: 114886195855016276}
+=======
+  - component: {fileID: 114459288527257226}
+>>>>>>> origin/master
   m_Layer: 0
   m_Name: fish2
   m_TagString: fish
@@ -89,7 +93,7 @@ Animator:
   m_GameObject: {fileID: 1508305658460388}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 88597ceb20221bd41837d98770597be2, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3418f34f3538ea144904da3a06489c6c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -109,7 +113,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e58a76e974fce1c47b326098339298d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
 --- !u!114 &114556961012341302
+=======
+--- !u!114 &114459288527257226
+>>>>>>> origin/master
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -117,12 +125,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1508305658460388}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: 66741083a02496049b8b0d08b4dc9889, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bloodFish: 1
   benefitValue: 0
 --- !u!114 &114886195855016276
+=======
+  m_Script: {fileID: 11500000, guid: cd33f84024a418d47a824f5965f54d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedMin: 2
+  speedMax: 7
+  pos: {x: 0, y: 0, z: 0}
+  frameCounter: 0
+  isMove: 0
+--- !u!114 &114556961012341302
+>>>>>>> origin/master
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,10 +153,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd33f84024a418d47a824f5965f54d0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   speedMin: 5
   speedMax: 10
   pos: {x: 0, y: 0, z: 0}
   frameCounter: 0
+=======
+  bloodFish: 1
+  benefitValue: 0
+>>>>>>> origin/master
 --- !u!212 &212960934623160350
 SpriteRenderer:
   m_ObjectHideFlags: 1

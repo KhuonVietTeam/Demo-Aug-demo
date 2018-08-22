@@ -40,7 +40,7 @@ Transform:
   m_GameObject: {fileID: 1192291896827068}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.5028205, y: -20.734758, z: 0}
-  m_LocalScale: {x: 55, y: 55, z: 1}
+  m_LocalScale: {x: 50, y: 50, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -108,7 +108,7 @@ Animator:
   m_GameObject: {fileID: 1192291896827068}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d4d3c94a90dc80b49a45b7c441e2c4f6, type: 2}
+  m_Controller: {fileID: 9100000, guid: 53f9bbccc29117e42b7199aab35a575e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -141,10 +141,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd33f84024a418d47a824f5965f54d0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   speedMin: 2
   speedMax: 5
   pos: {x: 0, y: 0, z: 0}
   frameCounter: 0
+=======
+  speedMin: 0
+  speedMax: 0
+  pos: {x: 0, y: 0, z: 0}
+  frameCounter: 0
+  isMove: 0
+>>>>>>> origin/master
 --- !u!114 &114064623900955674
 MonoBehaviour:
   m_ObjectHideFlags: 1
