@@ -11,17 +11,15 @@ public class CannonManager:MonoBehaviour  {
     public static GameObject[] srcCannons;
     public static float rotationEuler = 2;
     
-    public List<GameObject> cannonZone = new List<GameObject>();
+    public static List<GameObject> cannonZone = new List<GameObject>();
     //public Transform temp;
     int counter = 0;
 
     private void Awake()
     {
+        // load gameobject
         srcCannons = Resources.LoadAll<GameObject>("Cannons");
 
-
-
-      
     }
     private void Start()
     {
@@ -39,10 +37,7 @@ public class CannonManager:MonoBehaviour  {
             cannon[counter].transform.SetParent(i.transform, true);
             counter++;
         }
-
-
-
-    }
+    } // khởi tạo 4 súng trên 4 ụ súng được đặt sẵn
     public static void GetKeyToControl(int orderPlayer, KeyCode SubKey, KeyCode AddKey)
     {
         
@@ -61,5 +56,15 @@ public class CannonManager:MonoBehaviour  {
             
         }
 
-    }
+    } // hàm thay đổi góc quay
+    public static void ChangeGunPrefabs(int position,int IntanCanon)
+    {
+        //Debug.Log(" pos"+position + "cannon"+IntanCanon);
+        float rota = cannon[position].transform.localRotation.eulerAngles.z;
+        Destroy(cannon[position]);
+        cannon[position] = (GameObject)Instantiate(srcCannons[IntanCanon], cannonZone[position].transform.position, cannonZone[position].transform.rotation);
+        cannon[position].transform.Rotate(new Vector3(cannonZone[position].transform.rotation.x, cannonZone[position].transform.rotation.y, rota));
+        cannon[position].name = "cannon";
+        cannon[position].transform.SetParent(cannonZone[position].transform, true);
+    } // hàm thay đổi hình ảnh súng
 }

@@ -32,7 +32,6 @@ public class FishShooted : MonoBehaviour
         SpawnPoint4 = transform.Find("/CoinZone/Spawn4");
 
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -63,7 +62,7 @@ public class FishShooted : MonoBehaviour
             this.gameObject.GetComponent<SpriteRenderer>().color = Color.white; // tô cá màu trắng
             yield return new WaitForSeconds(0.08f);
         }
-    }
+    } // làm cá blink khi bị bắn
     //Fishes catched by Web
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -116,5 +115,5 @@ public class FishShooted : MonoBehaviour
         EventManager.fishbuyer.BuyFish(beKilledBy, fish);
         //Debug.Log("be killed by: " + beKilledBy.name);
         //Debug.Log("Benefit: " + beKilledBy.WatchWallet());
-    }
+    } // sử lý khi cá chết = khởi tạo tiền xác định người bắn va thực hiện cộng tiền
 }
