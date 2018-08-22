@@ -21,6 +21,8 @@ public class Move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        speed = Random.Range(speedMin, speedMax);
+
         if (isMove)
         {
             if (this.gameObject.name == "fish1" | this.gameObject.name == "fish2")
@@ -35,11 +37,11 @@ public class Move : MonoBehaviour
     }
     void MoveNomal()
     {
+
         transform.Translate(Time.deltaTime * speed, 0, 0);
     }
     void MoveSin()
     {
-        speed = Random.Range(speedMin, speedMax);
         float vl = Random.Range(0, 10);
         if (vl < 8)
         {
