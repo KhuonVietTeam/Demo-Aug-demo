@@ -59,6 +59,7 @@ public class FishShooted : MonoBehaviour
                     this.gameObject.tag = "Untagged";
                     beKilledBy = collision.gameObject.GetComponent<WebInfo>().firer;
                     FishDead();
+                    FishManager.allFishCounter--;
                 }
             }
 

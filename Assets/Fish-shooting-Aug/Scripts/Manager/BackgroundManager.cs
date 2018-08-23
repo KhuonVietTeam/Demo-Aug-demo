@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class BackgroundManager : MonoBehaviour {
     public static int changeStage = 0;
-    public GameObject srcWave;
+    GameObject srcWave;
     private void Awake()
     {
         srcWave = Resources.Load<GameObject>("Wave");
