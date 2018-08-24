@@ -57,14 +57,55 @@ public class CannonManager:MonoBehaviour  {
         }
 
     } // hàm thay đổi góc quay
-    public static void ChangeGunPrefabs(int position,int IntanCanon)
+    static void ChangeGunPrefabs(Player player,int IntanCanon)
     {
-        //Debug.Log(" pos"+position + "cannon"+IntanCanon);
-        float rota = cannon[position].transform.localRotation.eulerAngles.z;
-        Destroy(cannon[position]);
-        cannon[position] = (GameObject)Instantiate(srcCannons[IntanCanon], cannonZone[position].transform.position, cannonZone[position].transform.rotation);
-        cannon[position].transform.Rotate(new Vector3(cannonZone[position].transform.rotation.x, cannonZone[position].transform.rotation.y, rota));
-        cannon[position].name = "cannon";
-        cannon[position].transform.SetParent(cannonZone[position].transform, true);
+        float rota = cannon[GetIDFromName(player)].transform.localRotation.eulerAngles.z;
+        Destroy(cannon[GetIDFromName(player)]);
+        cannon[GetIDFromName(player)] = (GameObject)Instantiate(srcCannons[IntanCanon], cannonZone[GetIDFromName(player)].transform.position, cannonZone[GetIDFromName(player)].transform.rotation);
+        cannon[GetIDFromName(player)].transform.Rotate(new Vector3(cannonZone[GetIDFromName(player)].transform.rotation.x, cannonZone[GetIDFromName(player)].transform.rotation.y, rota));
+        cannon[GetIDFromName(player)].name = "cannon";
+        cannon[GetIDFromName(player)].transform.SetParent(cannonZone[GetIDFromName(player)].transform, true);
+
     } // hàm thay đổi hình ảnh súng
+    public static void ChangeGun(Player player) // hàm gọi class cannon thay đổi súng 
+    {
+        if (player.WatchBullet() >= 150)
+        {
+            CannonManager.ChangeGunPrefabs(player, 6);
+            
+        }
+        else if (player.WatchBullet() >= 125)
+        {
+            CannonManager.ChangeGunPrefabs(player, 5);
+        }
+        else if (player.WatchBullet() >= 100)
+        {
+            CannonManager.ChangeGunPrefabs(player, 4);
+        }
+        else if (player.WatchBullet() >= 75)
+        {
+            CannonManager.ChangeGunPrefabs(player, 3);
+        }
+        else if (player.WatchBullet() >= 50)
+        {
+            CannonManager.ChangeGunPrefabs(player, 2);
+        }
+        else if (player.WatchBullet() >= 25)
+        {
+            CannonManager.ChangeGunPrefabs(player, 1);
+        }
+        else
+        {
+            CannonManager.ChangeGunPrefabs(player, 0);
+        }
+    }
+    static int GetIDFromName(Player player) // lấy id từ thuộc tính name của player. cần thêm thuộc tính id cho player
+    {
+        for(int i = 1; i <= numCannon; i++)
+        {
+            if (player.name == "player" + i)
+                return --i;
+        }
+        return -1;
+    }
 }
