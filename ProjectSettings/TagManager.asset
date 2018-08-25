@@ -12,6 +12,7 @@ TagManager:
   - CoinSpawn
   - number1
   - number2
+  - Border
   layers:
   - Default
   - TransparentFX

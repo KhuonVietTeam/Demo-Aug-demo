@@ -20,10 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4474851453697240}
   - component: {fileID: 212834644215927342}
-  - component: {fileID: 58497559657356322}
   - component: {fileID: 50605595212237014}
   - component: {fileID: 114171366517877316}
   - component: {fileID: 114862444007127546}
+  - component: {fileID: 58652908980016484}
   m_Layer: 8
   m_Name: bullet2
   m_TagString: bullet
@@ -64,7 +64,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &58497559657356322
+--- !u!58 &58652908980016484
 CircleCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   srcweb: {fileID: 1282059507456872, guid: 72da759c2a93e404abe7e61b9ebdcd12, type: 2}
-  power: 1000
+  speed: 1000
 --- !u!114 &114862444007127546
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -104,6 +104,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rangePower: 0
+  curCannonAngel: 0
+  orderPlayer: 0
 --- !u!212 &212834644215927342
 SpriteRenderer:
   m_ObjectHideFlags: 1

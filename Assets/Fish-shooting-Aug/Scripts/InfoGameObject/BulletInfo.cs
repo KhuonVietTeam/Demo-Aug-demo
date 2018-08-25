@@ -5,8 +5,10 @@ using UnityEngine;
 public class BulletInfo : MonoBehaviour {
     public Player firer;
     public int rangePower = 0;
-	// Use this for initialization
-	void Start () {
+    public float curCannonAngel;
+    public int orderPlayer;
+    // Use this for initialization
+    void Start () {
 		
 	}
 	

@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
-<<<<<<< HEAD
-    float speed;
-    int choice;
-    float time;
-    public float speedMin;
-    public float speedMax;
-    public Vector3 pos;
-    public float frameCounter;
-    // Use this for initialization
-    void Start()
-    {
-=======
+//<<<<<<< HEAD
+//    float speed;
+//    int choice;
+//    float time;
+//    public float speedMin;
+//    public float speedMax;
+//    public Vector3 pos;
+//    public float frameCounter;
+//    // Use this for initialization
+//    void Start()
+//    {
+//=======
     public float speedMin;
     public float speedMax;
     private float speed;
@@ -28,61 +28,61 @@ public class Move : MonoBehaviour
         isMove = true;
         speed = 2f;
 
->>>>>>> origin/master
+//>>>>>>> origin/master
     }
 
     // Update is called once per frame
     void Update()
     {
         speed = Random.Range(speedMin, speedMax);
-<<<<<<< HEAD
-        choice = Random.Range(0, 2);
-        switch (choice)
-        {
-            case 0:
-                DiThang(speed);
-                break;
-            case 1:
-                DiHinhSin(speed);
-                break;
+//<<<<<<< HEAD
+//        choice = Random.Range(0, 2);
+//        switch (choice)
+//        {
+//            case 0:
+//                DiThang(speed);
+//                break;
+//            case 1:
+//                DiHinhSin(speed);
+//                break;
 
-        }
-        StartCoroutine(timecounter());
-    }
-    private void DiThang(float speed)
-    {
-        transform.Translate(Time.deltaTime * speed, 0, 0);
-    }
-    private void DiHinhSin(float speed)
-    {
-        speed = Random.Range(speedMin, speedMax);
-        frameCounter++;
-        if (frameCounter < 60)
-        {
-            transform.Rotate(new Vector3(0, 0, 1));
-        }
-        if (frameCounter > 60)
-        {
-            transform.Rotate(new Vector3(0, 0, -1));
-        }
-        if (frameCounter == 120)
-        {
-            frameCounter = 0;
-        }
-        transform.Translate(Time.deltaTime * speed, 0, 0);
-    }
-    private void MoveCircle(float speed)
-    {
-        transform.Rotate(new Vector3(0, 0, 1));
-        transform.Translate(Time.deltaTime * speed, 0, 0);
-    }
-    IEnumerator timecounter()
-    {
-        time = Random.Range(5, 10);
-        yield return new WaitForSeconds(time);
-    }
-}
-=======
+//        }
+//        StartCoroutine(timecounter());
+//    }
+//    private void DiThang(float speed)
+//    {
+//        transform.Translate(Time.deltaTime * speed, 0, 0);
+//    }
+//    private void DiHinhSin(float speed)
+//    {
+//        speed = Random.Range(speedMin, speedMax);
+//        frameCounter++;
+//        if (frameCounter < 60)
+//        {
+//            transform.Rotate(new Vector3(0, 0, 1));
+//        }
+//        if (frameCounter > 60)
+//        {
+//            transform.Rotate(new Vector3(0, 0, -1));
+//        }
+//        if (frameCounter == 120)
+//        {
+//            frameCounter = 0;
+//        }
+//        transform.Translate(Time.deltaTime * speed, 0, 0);
+//    }
+//    private void MoveCircle(float speed)
+//    {
+//        transform.Rotate(new Vector3(0, 0, 1));
+//        transform.Translate(Time.deltaTime * speed, 0, 0);
+//    }
+//    IEnumerator timecounter()
+//    {
+//        time = Random.Range(5, 10);
+//        yield return new WaitForSeconds(time);
+//    }
+//}
+//=======
 
         if (isMove)
         {
@@ -127,4 +127,4 @@ public class Move : MonoBehaviour
         }
     }
 }
->>>>>>> origin/master
+//>>>>>>> origin/master

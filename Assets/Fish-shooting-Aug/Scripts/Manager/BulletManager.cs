@@ -43,6 +43,8 @@ public class BulletManager:MonoBehaviour  {
                 bullet = (GameObject)Instantiate(srcBullets[0], CannonManager.cannon[orderPlayer].transform.position, CannonManager.cannon[orderPlayer].transform.rotation);
                 bullet.name = "bullet" + orderPlayer;
                 bullet.transform.SetParent(bulletZone, true);
+                bullet.GetComponent<BulletInfo>().orderPlayer = orderPlayer;
+                bullet.GetComponent<BulletInfo>().curCannonAngel = CannonManager.cannon[orderPlayer].transform.localRotation.eulerAngles.z;
                 bullet.GetComponent<BulletInfo>().firer = player; //fill .firer to who is shooted
                 bullet.GetComponent<BulletInfo>().rangePower = player.WatchBullet(); //fill .rangePower to how many range of power
                 EventManager.bulletseller.SellBullet(player); //tru tien

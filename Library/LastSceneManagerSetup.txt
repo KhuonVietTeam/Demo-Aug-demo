@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Fish-shooting-Aug/Scenes/Dat.unity
-=======
 - path: Assets/Fish-shooting-Aug/Scenes/Nhan 08212018.unity
->>>>>>> origin/master
   isLoaded: 1
   isActive: 1

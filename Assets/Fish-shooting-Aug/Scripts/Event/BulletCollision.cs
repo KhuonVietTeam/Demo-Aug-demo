@@ -37,5 +37,13 @@ public class BulletCollision : MonoBehaviour
             Destroy(this.gameObject);
 
         }
+        if (taget.gameObject.tag == "Border")
+        {
+           //khi gap layer "border"
+            this.gameObject.transform.localRotation = Quaternion.Euler(this.gameObject.transform.rotation.x, this.gameObject.transform.rotation.y, 180 - this.transform.localRotation.eulerAngles.z);
+            Debug.Log("cham thanh");
+        }
+
+
     }
 }
