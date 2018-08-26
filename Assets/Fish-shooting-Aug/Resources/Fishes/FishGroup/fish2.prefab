@@ -23,8 +23,8 @@ GameObject:
   - component: {fileID: 95460310809868488}
   - component: {fileID: 60845272102334698}
   - component: {fileID: 114584066876866242}
-  - component: {fileID: 114333885497000868}
   - component: {fileID: 114765676667520760}
+  - component: {fileID: 114398193425200164}
   m_Layer: 0
   m_Name: fish2
   m_TagString: fish
@@ -98,7 +98,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114333885497000868
+--- !u!114 &114398193425200164
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106,10 +106,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1804011802342202}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 470d78f9de8fd044daa5accf61e0c3d1, type: 3}
+  m_Script: {fileID: 11500000, guid: cd33f84024a418d47a824f5965f54d0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speedMin: 5
+  speedMax: 5
+  pos: {x: 0, y: 0, z: 0}
+  frameCounter: 0
   isMove: 0
 --- !u!114 &114584066876866242
 MonoBehaviour:

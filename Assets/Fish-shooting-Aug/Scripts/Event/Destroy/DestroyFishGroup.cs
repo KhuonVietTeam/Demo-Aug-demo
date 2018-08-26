@@ -20,7 +20,7 @@ public class DestroyFishGroup : MonoBehaviour
         if (x > 35 || x < -35 || y > 25 || y < -25)
         {
             Destroy(this.gameObject);
-            FishManager.allFishCounter--;
+            FishManager.allFishGroupCounter--;
         }
 
     }
