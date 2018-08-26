@@ -25,7 +25,7 @@ public class Move : MonoBehaviour
 
         if (isMove)
         {
-            if (this.gameObject.name == "fish1" | this.gameObject.name == "fish2")
+            if (this.gameObject.name == "fish1" | this.gameObject.name == "fish2") // loai ca 1 2 thi di chuyen hinh sin
             {
                 MoveSin();
             }
@@ -37,8 +37,12 @@ public class Move : MonoBehaviour
     }
     void MoveNomal()
     {
+<<<<<<< HEAD
 
         transform.Translate(Time.deltaTime * speed, 0, 0);
+=======
+        transform.Translate(Time.deltaTime * speed, 0, 0); // di chuyen thẩng
+>>>>>>> f7081f652f699e820b015da5df184f3fe838d637
     }
     void MoveSin()
     {
@@ -50,19 +54,19 @@ public class Move : MonoBehaviour
         else
         {
             frameCounter++;
-            if (frameCounter < 60)
+            if (frameCounter < 60) // lắc qua trái 60 frame thì lắc lại phên phải
             {
                 transform.Rotate(new Vector3(0, 0, 1));
             }
-            if (frameCounter > 60)
+            if (frameCounter > 60) // lắc qua phải
             {
                 transform.Rotate(new Vector3(0, 0, -1));
             }
-            if (frameCounter == 120)
+            if (frameCounter == 120) //reset để tiếp túc lắc trái
             {
                 frameCounter = 0;
             }
-            transform.Translate(Time.deltaTime * speed, 0, 0);
+            transform.Translate(Time.deltaTime * speed, 0, 0); // di chiuyeern theo hướng lắc
         }
     }
 }

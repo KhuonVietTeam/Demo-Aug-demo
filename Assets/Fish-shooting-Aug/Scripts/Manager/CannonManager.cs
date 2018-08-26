@@ -11,17 +11,15 @@ public class CannonManager:MonoBehaviour  {
     public static GameObject[] srcCannons;
     public static float rotationEuler = 2;
     
-    public List<GameObject> cannonZone = new List<GameObject>();
+    public static List<GameObject> cannonZone = new List<GameObject>();
     //public Transform temp;
     int counter = 0;
 
     private void Awake()
     {
+        // load gameobject
         srcCannons = Resources.LoadAll<GameObject>("Cannons");
 
-
-
-      
     }
     private void Start()
     {
@@ -39,10 +37,7 @@ public class CannonManager:MonoBehaviour  {
             cannon[counter].transform.SetParent(i.transform, true);
             counter++;
         }
-
-
-
-    }
+    } // khởi tạo 4 súng trên 4 ụ súng được đặt sẵn
     public static void GetKeyToControl(int orderPlayer, KeyCode SubKey, KeyCode AddKey)
     {
         
@@ -61,5 +56,56 @@ public class CannonManager:MonoBehaviour  {
             
         }
 
+    } // hàm thay đổi góc quay
+    static void ChangeGunPrefabs(Player player,int IntanCanon)
+    {
+        float rota = cannon[GetIDFromName(player)].transform.localRotation.eulerAngles.z;
+        Destroy(cannon[GetIDFromName(player)]);
+        cannon[GetIDFromName(player)] = (GameObject)Instantiate(srcCannons[IntanCanon], cannonZone[GetIDFromName(player)].transform.position, cannonZone[GetIDFromName(player)].transform.rotation);
+        cannon[GetIDFromName(player)].transform.Rotate(new Vector3(cannonZone[GetIDFromName(player)].transform.rotation.x, cannonZone[GetIDFromName(player)].transform.rotation.y, rota));
+        cannon[GetIDFromName(player)].name = "cannon";
+        cannon[GetIDFromName(player)].transform.SetParent(cannonZone[GetIDFromName(player)].transform, true);
+
+    } // hàm thay đổi hình ảnh súng
+    public static void ChangeGun(Player player) // hàm gọi class cannon thay đổi súng 
+    {
+        if (player.WatchBullet() >= 150)
+        {
+            CannonManager.ChangeGunPrefabs(player, 6);
+            
+        }
+        else if (player.WatchBullet() >= 125)
+        {
+            CannonManager.ChangeGunPrefabs(player, 5);
+        }
+        else if (player.WatchBullet() >= 100)
+        {
+            CannonManager.ChangeGunPrefabs(player, 4);
+        }
+        else if (player.WatchBullet() >= 75)
+        {
+            CannonManager.ChangeGunPrefabs(player, 3);
+        }
+        else if (player.WatchBullet() >= 50)
+        {
+            CannonManager.ChangeGunPrefabs(player, 2);
+        }
+        else if (player.WatchBullet() >= 25)
+        {
+            CannonManager.ChangeGunPrefabs(player, 1);
+        }
+        else
+        {
+            CannonManager.ChangeGunPrefabs(player, 0);
+        }
+    }
+    static int GetIDFromName(Player player) // lấy id từ thuộc tính name của player. cần thêm thuộc tính id cho player
+    {
+        for(int i = 1; i <= numCannon; i++)
+        {
+            if (player.name == "player" + i)
+                return --i;
+        }
+        return -1;
     }
 }
