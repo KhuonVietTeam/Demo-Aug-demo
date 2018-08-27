@@ -37,7 +37,7 @@ public class BulletManager:MonoBehaviour  {
         if (Input.GetKeyDown(ShootKey))
         {
 
-            if (player.WatchBullet() > 0)
+            if (player.WatchBullet() > 0 && player.WatchWallet() >0 && player.WatchWallet()>= player.WatchBullet())
             {
 
                 bullet = (GameObject)Instantiate(srcBullets[SelectBullet(player)], CannonManager.cannon[orderPlayer].transform.position, CannonManager.cannon[orderPlayer].transform.rotation);

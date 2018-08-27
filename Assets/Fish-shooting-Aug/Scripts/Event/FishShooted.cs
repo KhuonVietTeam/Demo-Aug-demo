@@ -110,6 +110,8 @@ public class FishShooted : MonoBehaviour
         // Destroy(this.gameObject, 1);  //destroy this fish
         coin = Instantiate(srcCoin, transform.position, transform.rotation) as GameObject;
         coin.name = "coin";
+        FishManager.allFishCounter--;
+
         coin.transform.SetParent(CoinZone, true);
         coin.gameObject.GetComponent<CoinInfo>().firer = beKilledBy;
         EventManager.fishbuyer.BuyFish(beKilledBy, fish);
