@@ -37,12 +37,8 @@ public class Move : MonoBehaviour
     }
     void MoveNomal()
     {
-<<<<<<< HEAD
 
-        transform.Translate(Time.deltaTime * speed, 0, 0);
-=======
         transform.Translate(Time.deltaTime * speed, 0, 0); // di chuyen thẩng
->>>>>>> f7081f652f699e820b015da5df184f3fe838d637
     }
     void MoveSin()
     {

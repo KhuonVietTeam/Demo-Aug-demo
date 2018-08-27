@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Fish-shooting-Aug/Scenes/Nhan 08212018.unity
-=======
 - path: Assets/Fish-shooting-Aug/Scenes/vuong.unity
->>>>>>> f7081f652f699e820b015da5df184f3fe838d637
   isLoaded: 1
   isActive: 1

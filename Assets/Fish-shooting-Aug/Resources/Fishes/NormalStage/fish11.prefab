@@ -195,8 +195,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd33f84024a418d47a824f5965f54d0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedMin: 0
-  speedMax: 0
+  speedMin: 10
+  speedMax: 12
   pos: {x: 0, y: 0, z: 0}
   frameCounter: 0
   isMove: 0
@@ -211,8 +211,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66741083a02496049b8b0d08b4dc9889, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bloodFish: 100
-  benefitValue: 0
+  bloodFish: 20
+  benefitValue: 5
 --- !u!212 &212223990486728646
 SpriteRenderer:
   m_ObjectHideFlags: 1
