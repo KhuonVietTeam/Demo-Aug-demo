@@ -69,12 +69,14 @@
      <Compile Include="Assets\Fish-shooting-Aug\Scripts\InfoGameObject\CoinInfo.cs" />
      <Compile Include="Assets\Fish-shooting-Aug\Scripts\InfoGameObject\FishInfo.cs" />
      <Compile Include="Assets\Fish-shooting-Aug\Scripts\InfoGameObject\WebInfo.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\Manager\BackgroundManager.cs" />
      <Compile Include="Assets\Fish-shooting-Aug\Scripts\Manager\BulletManager.cs" />
      <Compile Include="Assets\Fish-shooting-Aug\Scripts\Manager\CannonManager.cs" />
      <Compile Include="Assets\Fish-shooting-Aug\Scripts\Manager\EventManager.cs" />
      <Compile Include="Assets\Fish-shooting-Aug\Scripts\Manager\FishManager.cs" />
      <Compile Include="Assets\Fish-shooting-Aug\Scripts\Manager\KeyboardManager.cs" />
      <Compile Include="Assets\Fish-shooting-Aug\Scripts\Manager\PlayerManager.cs" />
+     <Compile Include="Assets\Fish-shooting-Aug\Scripts\Manager\SoundManager.cs" />
      <Compile Include="Assets\Fish-shooting-Aug\Scripts\Moverment\Move.cs" />
      <Compile Include="Assets\Fish-shooting-Aug\Scripts\Moverment\MoveCircle.cs" />
      <Compile Include="Assets\Fish-shooting-Aug\Scripts\Moverment\MoveSin.cs" />

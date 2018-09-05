@@ -14,6 +14,7 @@ public class BulletCollision : MonoBehaviour
     private void Start()
     {
         //getcomponent
+        
          WebZone= transform.Find("/WebZone");
 
     }

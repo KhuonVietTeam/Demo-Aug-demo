@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66741083a02496049b8b0d08b4dc9889, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bloodFish: 20
+  bloodFish: 500
   benefitValue: 5
 --- !u!114 &114034137560198526
 MonoBehaviour:

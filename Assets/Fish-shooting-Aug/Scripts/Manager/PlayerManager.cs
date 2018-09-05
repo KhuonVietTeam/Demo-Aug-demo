@@ -15,10 +15,10 @@ public class PlayerManager : MonoBehaviour
 
 
 
-        player[0] = new Player("player" + 1, 0, 0);
-        player[1] = new Player("player" + 2, 0, 0);
-        player[2] = new Player("player" + 3, 0, 0);
-        player[3] = new Player("player" + 4, 0, 0);
+        player[0] = new Player("player" + 1, 0, 5);
+        player[1] = new Player("player" + 2, 0, 5);
+        player[2] = new Player("player" + 3, 0, 5);
+        player[3] = new Player("player" + 4, 0, 5);
 
         //player1 = new Player("player1", 0, 0);
         //player2 = new Player("player2", 0, 0);

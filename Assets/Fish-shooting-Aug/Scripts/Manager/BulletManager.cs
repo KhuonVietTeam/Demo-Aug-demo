@@ -55,29 +55,36 @@ public class BulletManager:MonoBehaviour  {
     {
         if (player.WatchBullet() >= 150)
         {
+            SoundManager.PlaySound("gun7");
             return 6;
         }
         else if(player.WatchBullet() >= 125)
         {
+            SoundManager.PlaySound("gun6");
             return 5;
         }
         else if (player.WatchBullet() >= 100)
         {
+            SoundManager.PlaySound("gun45");
             return 4;
         }
         else if (player.WatchBullet() >= 75)
         {
+            SoundManager.PlaySound("gun45");
             return 3;
         }
         else if (player.WatchBullet() >= 50)
         {
+            SoundManager.PlaySound("gun13");
             return 2;
         }
         else if (player.WatchBullet() >= 25)
         {
+            SoundManager.PlaySound("gun13");
             return 1;
         }
-            return 0;
-    } // hàm thay đổi hình của súng
+        SoundManager.PlaySound("gun13");
+        return 0;
+    }
     
 }

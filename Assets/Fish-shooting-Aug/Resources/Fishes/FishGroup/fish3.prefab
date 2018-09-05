@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66741083a02496049b8b0d08b4dc9889, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bloodFish: 1
+  bloodFish: 300
   benefitValue: 0
 --- !u!212 &212723229201818244
 SpriteRenderer:

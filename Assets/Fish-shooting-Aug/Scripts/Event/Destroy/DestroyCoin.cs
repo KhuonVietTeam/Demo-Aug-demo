@@ -17,7 +17,7 @@ public class DestroyCoin : MonoBehaviour
         SpawnPoint2 = transform.Find("/CoinZone/Spawn2");
         SpawnPoint3 = transform.Find("/CoinZone/Spawn3");
         SpawnPoint4 = transform.Find("/CoinZone/Spawn4");
-
+        SoundManager.PlaySound("coin");
 
     }
 

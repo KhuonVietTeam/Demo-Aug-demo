@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   srcweb: {fileID: 1705423428553026, guid: 959f32eedc4acea4998b7fb9bfd05a0c, type: 2}
-  power: 1000
+  speed: 1000
 --- !u!114 &114213530799645870
 MonoBehaviour:
   m_ObjectHideFlags: 1
